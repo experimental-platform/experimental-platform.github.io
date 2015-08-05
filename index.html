@@ -223,50 +223,17 @@
     <footer>
       <div class="content">
         <div class="menu">
-          <a href="http://protohardware.tumblr.com/" target="_blank">Blog</a> <a href="https://github.com/experimental-platform/" target="_blank">GitHub</a> <a href="https://groups.google.com/forum/#!forum/experimental-platform" target="_blank">Mailing List</a>
+          <a href="http://protohardware.tumblr.com/" target="_blank">Blog</a>
+          <a href="https://github.com/experimental-platform/" target="_blank">GitHub</a>
+          <a href="https://groups.google.com/forum/#!forum/experimental-platform" target="_blank">Mailing List</a>
+          <a href="https://github.com/experimental-platform/platform-configure-script/wiki" target="_blank">Docs</a>
+          <a href="https://github.com/experimental-platform/platform-configure-script/issues" target="_blank">Issue Tracker</a>
         </div>
         <a class="copyright" target="_blank" href="https://protonet.info/">Made with &hearts; in Hamburg by Protonet</a>
       </div>
     </footer>
 
     <script src="js/jquery-2.1.4.min.js"></script>
-    <script>
-      $(function() {
-        $(".tech-chooser li").click(function(event) {
-          $(".tech-chooser li").removeClass("selected");
-          $(event.currentTarget).addClass("selected");
-          $(".tech-section").removeClass("selected");
-          var lang = $(event.currentTarget).data("lang");
-          $(".tech-" + lang).addClass("selected");
-        });
-        
-        function nextInGallery() {
-          var $current = $(".gallery figure:visible");
-          var $next = $current.next("figure");
-          
-          if (!$next.length) {
-            $next = $current.parent().children("figure").first();
-          }
-          $current.removeClass("selected");
-          $next.addClass("selected").css("display", "none").fadeIn();
-          return false;
-        }
-
-        function previousInGallery() {
-          var $current = $(".gallery figure:visible");
-          var $previous = $current.prev("figure");
-          if (!$previous.length) {
-            $previous = $current.parent().children("figure").last();
-          }
-          $current.removeClass("selected");
-          $previous.addClass("selected").css("display", "none").fadeIn();
-          return false;
-        }
-
-        $(".gallery .next").click(nextInGallery);
-        $(".gallery .previous").click(previousInGallery);
-        $(".gallery img").click(nextInGallery);
-      })
-    </script>
+    <script src="js/page.js"></script>
   </body>
 </html>
