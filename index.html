@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Experimental Platform</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+  </head>
+  <body>
+    <h1>Experimental Platform</h1>
+    <div class="container">
+
+      <header>
+        <figure>
+          <img src="img/experimental_platform_gray.jpg">
+          <figcaption>
+            <h2>Stop compiling. Start tinkering.</h2>
+            <p>Experimental Platform provides an easy way to deploy apps on local hardware without the hassle to setup the environment. It enables developers and makers to focus on the things that matter.</p>
+          </figcaption>
+        </figure>
+      </header>
+
+
+
+      <section class="how-to-deploy-apps">
+        <h3>Hello World!</h3>
+        <p>After deployment your app will instantly be available on the internet while it's still hosted on your local machine.</p>
+
+        <ul class="tech-chooser">
+          <li data-lang="rails">
+            <h4>Rails</h4>
+            <img src="img/tech/rails.png">
+          </li>
+          <li data-lang="php">
+            <h4>PHP</h4>
+            <img src="img/tech/php.png">
+          </li>
+          <li class="selected" data-lang="nodejs">
+            <h4>node.js</h4>
+            <img src="img/tech/nodejs.png">
+          </li>
+          <li data-lang="python">
+            <h4>Python</h4>
+            <img src="img/tech/python.png">
+          </li>
+          <li data-lang="docker">
+            <h4>Docker</h4>
+            <img src="img/tech/docker.png">
+          </li>
+        </ul>
+
+        <div class="tech-section tech-nodejs selected">
+          <div class="tech-column">
+            <h5>1. Get the node.js "hello world" example</h5>
+            <code>
+              git clone https://github.com/heroku/node-js-sample.git<br>
+              cd node-js-sample
+            </code>
+          </div>
+          <div class="tech-column">
+            <h5>2. Choose a name, add git remote and deploy</h5>
+            <code>
+              git remote add platform ssh://dokku@platform.local:8022/app-name<br>
+              git push platform master
+            </code>
+          </div>
+        </div>
+
+        <div class="tech-section tech-rails">
+          <div class="tech-column">
+            <h5>1. Get the Rails "hello world" example</h5>
+            <code>
+              git clone https://github.com/experimental-platform/rails-hello-world.git<br>
+              cd rails-hello-world
+            </code>
+          </div>
+          <div class="tech-column">
+            <h5>2. Choose a name, add git remote and deploy</h5>
+            <code>
+              git remote add platform ssh://dokku@platform.local:8022/app-name<br>
+              git push platform master
+            </code>
+          </div>
+        </div>
+
+        <div class="tech-section tech-php">
+          <div class="tech-column">
+            <h5>1. Get the PHP "hello world" example</h5>
+            <code>
+              git clone https://github.com/heroku/php-getting-started.git<br>
+              cd php-getting-started
+            </code>
+          </div>
+          <div class="tech-column">
+            <h5>2. Choose a name, add git remote and deploy</h5>
+            <code>
+              git remote add platform ssh://dokku@platform.local:8022/app-name<br>
+              git push platform master
+            </code>
+          </div>
+        </div>
+
+        <div class="tech-section tech-python">
+          <div class="tech-column">
+            <h5>1. Get the Python "hello world" example</h5>
+            <code>
+              git clone https://github.com/guaq/heroku-in-a-bottle.git<br>
+              cd heroku-in-a-bottle
+            </code>
+          </div>
+          <div class="tech-column">
+            <h5>2. Choose a name, add git remote and deploy</h5>
+            <code>
+              git remote add platform ssh://dokku@platform.local:8022/app-name<br>
+              git push platform master
+            </code>
+          </div>
+        </div>
+
+        <div class="tech-section tech-docker">
+          <div class="tech-column">
+            <h5>1. Get the "hello world" Dockerfile example</h5>
+            <code>
+              git clone https://github.com/experimental-platform/dockerfile-hello-world.git<br>
+              cd dockerfile-hello-world
+            </code>
+          </div>
+          <div class="tech-column">
+            <h5>2. Choose a name, add git remote and deploy</h5>
+            <code>
+              git remote add platform ssh://dokku@platform.local:8022/app-name<br>
+              git push platform master
+            </code>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="why-do-we-need-this">
+        <div class="content-column">
+          <img src="img/protocat.png">
+        </div>
+        <div class="content-column">
+          <h3>Why do we need this?</h3>
+          <p>With growing trends like IoT and Smart Home an armada of devices uploads data into the cloud. That is why it becomes more important than ever to offer a decentralized alternative.</p>
+          <p>Experimental platform is the first step towards a digital hub for people that strive for independence.</p>
+          <p>Join us as a hard- or software developer to create exciting applications in a fun and sustainable way.</p>
+          <a class="button" href="https://github.com/experimental-platform/"  target="_blank">GitHub</a>
+          <a class="button" href="https://groups.google.com/forum/#!forum/experimental-platform" target="_blank">Mailing list</a>
+        </div>
+      </section>
+
+
+
+      <section class="how-do-i-get-it">
+        <div class="content-column">
+          <h3>How do I get it?</h3>
+          <p>Experimental Platform can be run on almost any standard x86 hardware. Though we recommend running it on dedicated hardware, making it truly independent and accessible 24/7.</p>
+          <p>Right now we are busy working on a module system that makes integrating sensors, actuators and other hardware components very easy. Scroll down to see a few pics how our current lab prototypes look like.
+    <br>In the meantime you can get the Alpha Hardware and start developing.</p>
+          <a class="button">Order alpha hardware</a>
+          <a class="button" href="https://github.com/experimental-platform/platform-configure-script/blob/master/README.md" target="_blank">Install on existing hardware</a>
+        </div>
+        <div class="content-column">
+          <img src="img/betaprototyp.jpg" class="content-column">
+        </div>
+      </section>
+
+
+
+      <section class="roadmap">
+        <div class="roadmap-column">
+          <h4>Now / Alpha Version</h4>
+          <img src="img/alpha_hardware.png">
+          <p>To jumpstart with Experimental Platform and save on your electricity bill, we sourced a very affordable low power hardware and preinstalled Experimental Platform on it.</p>
+        </div>
+      
+        <div class="roadmap-column">
+          <h4>In October / Beta Version</h4>
+          <img src="img/beta_hardware.png">
+          <p>Our commitment is to develop this version into a custom beta hardware with unique capabilities to control and program sensor and actuator networks your apps will be able to use.</p>
+        </div>
+
+        <div class="roadmap-column">
+          <h4>End of the Year</h4>
+          <img src="img/final_hardware.png">
+          <p>Both perfect systems for development. But with joined effort we want to release a custom made end user product by the end of the year, including dead simple to use modules to automate everyday tasks.</p>
+        </div>
+      </section>
+
+
+      <div class="gallery">
+        <span class="next">&gt;</span>
+        <span class="previous">&lt;</span>
+        <figure class="selected">
+          <img src="img/gallery/1.jpg">
+          <figcaption>Too be able to connect hardware upgrades, more storage and Interfaces like zigbee, z-wave, knx, enocean, eq3 to the System, we designed a module System based on USB.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/gallery/2.jpg">
+          <figcaption>Once we finish the module standard, all CAD Data will be open source, ready to print on your home 3d printer.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/gallery/3.jpg">
+          <figcaption>We chose a cheap consumer x86 platform, after testing a lot of ARM devboards, embedded Solutions and SBCs. It is the best compromise of high performance, good i/o support and low power.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/gallery/4.jpg">
+          <figcaption>The modular system allows vor a very wide range of applications going from smarthome, office, industrial up to embedded use. The Experimental Platform software can speed up the process in any of those applications.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/gallery/5.jpg">
+          <figcaption>As for Module availability, we will design some of the most needed ones. But we will also Blog about how you can make your own modules using available open source technologies and how to connect them to the Software.</figcaption>
+        </figure>
+      </div>
+
+
+
+    </div>
+
+    <footer>
+      <div class="content">
+        <div class="menu">
+          <a href="http://protohardware.tumblr.com/" target="_blank">Blog</a> <a href="https://github.com/experimental-platform/" target="_blank">GitHub</a> <a href="https://groups.google.com/forum/#!forum/experimental-platform" target="_blank">Mailing List</a>
+        </div>
+        <a class="copyright" target="_blank" href="https://protonet.info/">Made with &hearts; in Hamburg by Protonet</a>
+      </div>
+    </footer>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script>
+      $(function() {
+        $(".tech-chooser li").click(function(event) {
+          $(".tech-chooser li").removeClass("selected");
+          $(event.currentTarget).addClass("selected");
+          $(".tech-section").removeClass("selected");
+          var lang = $(event.currentTarget).data("lang");
+          $(".tech-" + lang).addClass("selected");
+        });
+        
+        function nextInGallery() {
+          var $current = $(".gallery figure:visible");
+          var $next = $current.next("figure");
+          
+          if (!$next.length) {
+            $next = $current.parent().children("figure").first();
+          }
+          $current.removeClass("selected");
+          $next.addClass("selected").css("display", "none").fadeIn();
+          return false;
+        }
+
+        function previousInGallery() {
+          var $current = $(".gallery figure:visible");
+          var $previous = $current.prev("figure");
+          if (!$previous.length) {
+            $previous = $current.parent().children("figure").last();
+          }
+          $current.removeClass("selected");
+          $previous.addClass("selected").css("display", "none").fadeIn();
+          return false;
+        }
+
+        $(".gallery .next").click(nextInGallery);
+        $(".gallery .previous").click(previousInGallery);
+        $(".gallery img").click(nextInGallery);
+      })
+    </script>
+  </body>
+</html>
