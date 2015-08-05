@@ -265,6 +265,7 @@ code {
 
 .gallery .next,
 .gallery .previous {
+  font-size: 22px;
   background: #fff;
   position: absolute;
   opacity: 0;
