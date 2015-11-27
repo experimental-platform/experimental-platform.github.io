@@ -152,9 +152,35 @@
         </div>
       </section>
 
+<section class="blogposts">
 
+<?php
 
-      <section class="how-do-i-get-it">
+    $request_url = "http://experimental-platform.tumblr.com/api/read?type=post&start=0&num=1";
+
+    $xml = simplexml_load_file($request_url);
+
+	$blogpostname = $xml->posts->post->{'regular-title'};
+
+    $post = $xml->posts->post->{'regular-body'};
+
+    $link = $xml->posts->post['url'];
+
+    $teaser = substr($post,0,500);
+
+    echo "<h3>Latest Blog entry</h3>";
+	
+	echo '<h4>'.$blogpostname.'</h4>';
+
+    echo '<p>'.$teaser.'</p>';
+
+    echo "</br><a target=frame2 href=".$link.">Read More</a>"; 
+
+?>
+	
+</section>
+	
+<section class="how-do-i-get-it">
         <div class="content-column">
           <h3>How do I get it?</h3>
           <p>Experimental Platform can be run on almost any standard x86 hardware. Though we recommend running it on dedicated hardware, making it truly independent and accessible 24/7.</p>
