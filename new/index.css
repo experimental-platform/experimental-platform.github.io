@@ -1,0 +1,693 @@
+@font-face {
+  font-family: "Experimental";
+  src: url(fonts/experimental_regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Experimental";
+  src: url(fonts/experimental_bold.woff) format("woff");
+  font-weight: bold;
+}
+
+html, input, select {
+  font-family: Experimental, sans-serif;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  color: #000;
+  line-height: 1.3;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.section-content {
+  width: 900px;
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+.teaser + .section-content {
+  margin-top: 60px;
+}
+
+.headline-content {
+  color: #57a4f9;
+  font-size: 42px;
+  text-align: center;
+  margin: 0 0 10px;
+  font-weight: normal;
+  position: relative;
+}
+
+.headline-content:before {
+  content: "";
+  top: 52%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  position: absolute;
+  background: #ddd;
+}
+
+.headline-content span {
+  background: #fff;
+  padding: 0 20px;
+  position: relative;
+}
+
+.headline-logo {
+  margin: 0;
+  color: #666;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.text-content {
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.copy-text {
+  font-size: 16px;
+  margin: 18px 0;
+}
+
+.teaser {
+  background-color: #000;
+  position: relative;
+  height: 540px;
+  height: 80vh;
+  text-align: center;
+  padding-top: 1px;
+  overflow: hidden;
+}
+
+.teaser:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 20%, rgb(0, 0, 0) 100%), url(img/iot_mainboards.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.teaser .logo,
+.teaser .code,
+.teaser .claim {
+  position: relative;
+  z-index: 1;
+  line-height: 1;
+}
+
+.teaser .logo {
+  color: #fff;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 30px 10px 70px 10px;
+}
+
+.teaser .logo:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 36px;
+  height: 36px;
+  margin: -4px 8px 0 0;
+  background: url(img/hexagon_white.svg) no-repeat center center;
+  background-size: 100% auto;
+}
+
+.teaser .code {
+  font-weight: normal;
+  margin: 0 10px 20px 10px;
+}
+
+.teaser code {
+  color: #FF7E30;
+  font-family: Menlo,Consolas,"Courier New",Courier,"Liberation Mono",monospace;
+  font-size: 36px;
+}
+
+.teaser .claim {
+  margin: 0;
+  color: #ccc;
+  font-size: 22px;
+}
+
+.supported-technologies {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.supported-technologies h4 {
+  color: #aaa;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+}
+
+.supported-technologies ul {
+  margin: 0 0 10px 0;
+  padding-left: 0;
+}
+
+.supported-technologies li {
+  display: inline-block;
+}
+
+.supported-technologies img {
+  height: 60px;
+}
+
+.supported-technologies figure {
+  margin: 0;
+  padding: 0 16px;
+  opacity: 0.8;
+  -webkit-filter: grayscale(0.7);
+  filter: grayscale(0.7);
+  transition: opacity 0.2s, filter 0.2s, -webkit-filter 0.2s;
+}
+
+.supported-technologies figcaption {
+  font-size: 14px;
+  color: #ddd;
+  opacity: 0;
+}
+
+.supported-technologies li:hover figcaption {
+  opacity: 0.9999;
+}
+
+.supported-technologies li:hover figure {
+  opacity: 1;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.nodejs figure,
+.rails figure,
+.golang figure,
+.php figure,
+.python figure,
+.dockerfile figure {
+  animation: fade 0.8s;
+}
+
+.nodejs figure {
+  animation-delay: 2s;
+}
+
+.rails figure {
+  animation-delay: 2.2s;
+}
+
+.golang figure {
+  animation-delay: 2.4s;
+}
+
+.php figure {
+  animation-delay: 2.6s;
+}
+
+.python figure {
+  animation-delay: 2.8s;
+}
+
+.dockerfile figure {
+  animation-delay: 3s;
+}
+
+.github-banner {
+  position: absolute;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 149px;
+  width: 149px;
+}
+
+.examples {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.examples li {
+  flex: 1 1 22%;
+  margin-right: 20px;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+  display: block;
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+
+.examples li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.examples li:nth-child(-n+4) {
+  margin-bottom: 20px;
+}
+
+.examples a {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.examples h4,
+.examples p {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.examples h4 {
+  font-size: 16px;
+}
+
+.examples p {
+  font-size: 12px;
+  color: #666;
+}
+
+.img-example {
+  display: block;
+  height: 100px;
+  width: 100%;
+  background-color: #eee;
+  background-size: cover;
+  background-position: center center;
+  -webkit-filter: grayscale(0.7);
+  filter: grayscale(0.7);
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.3);
+  transition: -webkit-filter 0.3s, filter 0.3s, box-shadow 0.3s;
+}
+
+a:hover .img-example {
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.2);
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+.img-example-jasper {
+  background-image: url(img/jasper_example.jpg);
+}
+
+.img-example-co2 {
+  background-image: url(img/co2_air_quality_example.jpg);
+}
+
+.img-example-chromecast {
+  background-image: url(img/chromecast_example3.jpg);
+}
+
+.img-example-webcam {
+  background-image: url(img/webcam_example.jpg);
+}
+
+.img-example-radio {
+  background-image: url(img/radio_socket_example.jpg);
+}
+
+.img-example-speakers {
+  background-image: url(img/loudspeakers_example2.jpg);
+}
+
+.img-example-live-webcam {
+  background-image: url(img/webcam_live_stream_example.jpg);
+}
+
+.img-example-voice-recognition {
+  background-image: url(img/voice_recognition_example.jpg);
+}
+
+.img-technology-nodejs {
+  background-image: url(img/node.js);
+}
+
+.img-technology {
+  -webkit-filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.25));
+  position: relative;
+  display: inline-block;
+  margin-top: -20px;
+  width: 32px;
+  height: 40px;
+  background: url(img/hexagon_white.svg) center center no-repeat;
+  background-size: auto 100%;
+}
+
+.img-technology:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.img-technology-nodejs:after {
+  background-size: auto 28px;
+  background-image: url(img/nodejs.svg);
+}
+
+.img-technology-arduino:after {
+  background-size: 24px auto;
+  background-image: url(img/arduino.png);
+}
+
+.img-technology-rails:after {
+  background-size: auto 22px;
+  background-image: url(img/rails.svg);
+}
+
+.img-technology-php:after {
+  background-size: auto 26px;
+  background-image: url(img/php.svg);
+}
+
+.img-technology-python:after {
+  background-size: auto 24px;
+  background-image: url(img/python.svg);
+}
+
+.img-technology-docker:after {
+  background-size: 26px auto;
+  background-image: url(img/docker.svg);
+}
+
+.installation-steps {
+  border: 1px solid #eee;
+  border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px 40px 40px 20px;
+  overflow: hidden;
+  margin: 0;
+  counter-reset: installation-steps;
+}
+
+.installation-steps li {
+  padding-left: 70px;
+  display: block;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.installation-steps li:last-child {
+  margin: 0;
+}
+
+.installation-steps li:before {
+  content: counter(installation-steps);
+  counter-increment: installation-steps;
+  font-size: 50px;
+  color: #57a4f9;
+  opacity: 0.7;
+  position: absolute;
+  left: 10px;
+  top: -1px;
+  line-height: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.installation-steps .primary {
+  font-size: 18px;
+  margin: 0 0 6px;
+}
+
+.installation-steps .secondary {
+  color: #777;
+  font-size: 14px;
+  margin: 0;
+}
+
+.installation-steps pre {
+  margin: 0;
+  padding: 8px 10px;
+  font-size: 12px;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  color: #666;
+  line-height: 1.5;
+  overflow: auto;
+  position: relative;
+}
+
+.installation-steps code {
+  font-family: Menlo,Consolas,"Courier New",Courier,"Liberation Mono",monospace;
+}
+
+.primary code,
+.secondary code {
+  font-family: inherit;
+  display: inline-block;
+  white-space: nowrap;
+  padding: 0 4px;
+  background-color: #f3f3f3;
+  color: #666;
+}
+
+.used-technologies {
+  text-align: center;
+  padding: 0;
+}
+
+.used-technologies li {
+  display: inline-block;
+  margin-right: 42px;
+}
+
+.used-technologies li:last-child {
+  margin: 0;
+}
+
+.used-technologies a {
+  text-decoration: none;
+}
+
+.used-technologies img {
+  height: 100px;
+  -webkit-filter: grayscale(0.6);
+  filter: grayscale(0.6);
+  transition: -webkit-filter 0.3s, filter 0.3s;
+}
+
+.used-technologies figure {
+  margin: 0;
+}
+
+.used-technologies figcaption {
+  color: #666;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.used-technologies li:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.used-technologies li:hover figcaption {
+  opacity: 1;
+}
+
+.protocat {
+  width: 380px;
+  float: left;
+  margin-right: 40px;
+  margin: 10px 40px 0 20px;
+}
+
+.button {
+  border: 1px solid #57a4f9;
+  line-height: 1;
+  padding: 10px;
+  font-size: 16px;
+  display: inline-block;
+  border-radius: 3px;
+  background: #fff;
+}
+
+.roadmap {
+  margin-top: 15px;
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 10px;
+  background-color: #eaeaea;
+  border-radius: 4px;
+  display: block;
+  left: 70px;
+}
+
+.milestone {
+  position: relative;
+  margin-left: 150px;
+  margin-bottom: 50px;
+  padding: 15px 20px;
+  background-color: #f8f8f8;
+  width: 60%;
+  border-radius: 4px;
+}
+
+.milestone:last-child {
+  margin-bottom: 0;
+}
+
+.milestone h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.milestone:before {
+  content: "";
+  border-radius: 30px;
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  top: 0;
+  left: -101px;
+  background-color: #FF7E30;
+  border: 5px solid #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.milestone:after {
+  content: "";
+  position: absolute;
+  left: -32px;
+  border: 16px solid transparent;
+  border-right-color: #f8f8f8;
+  top: 10px;
+}
+
+.footer-content {
+  background-color: #111;
+  padding: 40px 0;
+  color: #ccc;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+}
+
+.footer-content:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.2;
+  background: url(img/iot_mainboards.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.footer-content a {
+  color: inherit;
+  margin-right: 20px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+a.copyright-notice {
+  line-height: 50px;
+  display: inline-block;
+  color: #999;
+  text-decoration: none;
+}
+
+.links a:last-child {
+  margin-right: 0;
+}
+
+.modal-img {
+  float: left;
+  height: 149px;
+  margin-right: 25px;
+}
+
+.modal {
+  width: 600px !important;
+}
+
+.modal h2 {
+  margin: 0 0 10px 0;
+}
+
+.modal-form input[type=email] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  outline: 0;
+}
+
+.modal-form input[type=submit] {
+  background: #57a4f9;
+  cursor: pointer;
+  font-size: 16px;
+  border: 0;
+  color: #fff;
+  padding: 11px;
+}
+
+.modal-form {
+  overflow: hidden;
+}
+
+.form-hint {
+  color: #777;
+  font-size: 14px;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.8;
+    -webkit-filter: grayscale(0.7);
+    filter: grayscale(0.7);
+  }
+  50% {
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+  100% {
+    opacity: 0.8;
+    -webkit-filter: grayscale(0.7);
+    filter: grayscale(0.7);
+  }
+}

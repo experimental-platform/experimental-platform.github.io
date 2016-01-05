@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>A heroku-like platform for iot projects | Experimental Platform</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="author" content="Protonet GmbH, Hamburg, Germany">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Experimental Platform provides an easy way to deploy apps on local hardware without the hassle to setup the environment. It enables developers and makers to focus on the things that matter.">
+  </head>
+  <body>
+    <section class="teaser">
+      <h1 class="logo" title="Build great IoT applications with web technologies">Experimental Platform</h1>
+      <h2 class="code"><code>git push internet-of-things</code></h2>
+      <p class="claim">A heroku-like platform for local hardware</p>
+      <div class="supported-technologies">
+        <h4>Works with</h4>
+        <ul>
+          <li class="nodejs" title="Build IoT apps with node.js">
+            <figure>
+              <img src="img/nodejs.svg">
+            </figure>
+            <figcaption>Node.JS</figcaption>
+          </li>
+          <li class="rails" title="Build IoT apps with Ruby on Rails">
+            <figure>
+              <img src="img/rails.svg">
+            </figure>
+            <figcaption>Ruby (on Rails)</figcaption>
+          </li>
+          <li class="golang" title="Build IoT apps with Golang">
+            <figure>
+              <img src="img/go.svg">
+            </figure>
+            <figcaption>Go</figcaption>
+          </li>
+          <li class="php" title="Build IoT apps with PHP">
+            <figure>
+              <img src="img/php.svg">
+            </figure>
+            <figcaption>PHP</figcaption>
+          </li>
+          <li class="python" title="Build IoT apps with Python">
+            <figure>
+              <img src="img/python.svg">
+            </figure>
+            <figcaption>Python</figcaption>
+          </li>
+          <li class="dockerfile" title="Build IoT apps with Docker">
+            <figure>
+              <img src="img/docker.svg">
+            </figure>
+            <figcaption>Dockerfile</figcaption>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <!-- EXAMPLES -->
+    <section class="section-content">
+      <h2 class="headline-content"><span>Examples</span></h2>
+      <p class="text-content">A list of open source reference apps built with experimental platform. <a target="_blank" href="https://github.com/experimental-platform/platform-configure-script/wiki#examples-with-connected-hardware">More can be found here.</a></p>
+      <ul class="examples">
+        <li>
+          <a href="https://github.com/experimental-platform/example-dockerfile-jasper" target="_blank">
+            <span class="img-example img-example-jasper"></span>
+            <span class="img-technology img-technology-python" title="Built with Python"></span>
+            <span class="img-technology img-technology-docker" title="Using Docker"></span>
+            <h4>Jasper Voice Assistant</h4>
+            <p>Jasper is an open source platform for developing always-on, voice-controlled apps.</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/experimental-platform/example-co2" target="_blank">
+            <span class="img-example img-example-co2"></span>
+            <span class="img-technology img-technology-nodejs" title="Built with Node.JS"></span>
+            <span class="img-technology img-technology-arduino" title="Uses an Arduino board"></span>
+            <h4>Air Quality Sensor</h4>
+            <p>Measure the CO₂ content in realtime. Tells you when to open the windows.</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/experimental-platform/example-chromecast" target="_blank">
+            <span class="img-example img-example-chromecast"></span>
+            <span class="img-technology img-technology-nodejs" title="Built with Node.JS"></span>
+            <h4>Chromecast</h4>
+            <p>Play a video on a chromecast enabled device in your network.</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/experimental-platform/example-php-webcam" target="_blank">
+            <span class="img-example img-example-webcam"></span>
+            <span class="img-technology img-technology-php" title="Built with PHP"></span>
+            <h4>Webcam</h4>
+            <p>A simple PHP app that renders the picture of a connected webcam in the browser.</p>
+          </a>
+        </li>
+        <li class="more">
+          <a href="https://github.com/experimental-platform/radio-test" target="_blank">
+            <span class="img-example img-example-radio"></span>
+            <span class="img-technology img-technology-nodejs" title="Built with Node.JS"></span>
+            <span class="img-technology img-technology-arduino" title="Uses an Arduino board"></span>
+            <h4>Radio Controlled Socket</h4>
+            <p>Record and replay signals of a radio power socket.</p>
+          </a>
+        </li>
+        <li class="more">
+          <a href="https://github.com/experimental-platform/example-rails-loudspeakers" target="_blank">
+            <span class="img-example img-example-speakers"></span>
+            <span class="img-technology img-technology-rails" title="Built with Ruby on Rails"></span>
+            <h4>Loudspeakers</h4>
+            <p>Play animal sounds from a Rails app on a connected speaker.</p>
+          </a>
+        </li>
+        <li class="more">
+          <a href="https://github.com/experimental-platform/example-webcam-live-stream" target="_blank">
+            <span class="img-example img-example-live-webcam"></span>
+            <span class="img-technology img-technology-nodejs" title="Built with Node.JS"></span>
+            <h4>Live Webcam Stream</h4>
+            <p>Remotely monitor your cat with Node.JS, ffmpeg and a connected webcam.</p>
+          </a>
+        </li>
+        <li class="more">
+          <a href="https://github.com/experimental-platform/example-voice-recognition" target="_blank">
+            <span class="img-example img-example-voice-recognition"></span>
+            <span class="img-technology img-technology-nodejs"></span>
+            <h4>Voice Recognition</h4>
+            <p>A simple app that listens for voice commands. Build your own Amazon Echo.</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+
+
+    <!-- HELLO WORLD -->
+    <section class="section-content">
+      <h2 class="headline-content"><span>Hello World!</span></h2>
+      <p class="text-content">Installing platform and creating your first app only takes a couple of minutes. No SDK needed.<br>Your app will instantly be available on the internet while it's still hosted on your local machine.</p>
+      <ol class="installation-steps">
+        <li>
+          <p class="primary">Follow <a href="https://coreos.com/os/docs/latest/installing-to-disk.html" target="_blank">these instructions</a> to install CoreOS Linux on your local hardware.</p>
+          <p class="secondary">Read our <a target="_blank" href="https://github.com/experimental-platform/platform-configure-script#requirements">hardware requirements</a> first. Alternatively you can install it in a <a href="https://github.com/experimental-platform/platform-configure-script#install-in-local-vm" target="_blank">local VM</a> or simply order pre-installed hardware from us.</p>
+        </li>
+        <li>
+          <p class="primary">Install Experimental Platform by executing this one-liner on the hardware:</p>
+          <pre><code>curl https://raw.githubusercontent.com/experimental-platform/platform-configure-script/master/platform-configure.sh | sudo PLATFORM_INSTALL_OSUPDATE=true PLATFORM_INSTALL_REBOOT=true PLATFORM_SYS_GROUP=protonet sh</code></pre>
+        </li>
+        <li>
+          <p class="primary">Open <code>http://paleale.local/</code> (or the corresponding IP) in your browser and setup Experimental Platform.</p>
+          <p class="secondary">You will be asked for a name, password and your public ssh key.</p>
+        </li>
+        <li>
+          <p class="primary">Now deploy your first "hello world" app from your computer:</p>
+          <pre><code>git clone https://github.com/experimental-platform/nodejs-hello-world.git && cd nodejs-hello-world
+git remote add platform ssh://dokku@your-box.local:8022/nodejs-hello-world
+git push platform master</code></pre>
+        </li>
+        <li>
+          <p class="primary">That's it! Your app is now available on the internet and within your local network.</p>
+          <p class="secondary">Locally via <code>http://your-name.local/nodejs-hello-world/</code> and remotely via <code>https://your-name.protonet.info/nodejs-hello-world/</code>.</p>
+        </li>
+      </ol>
+    </section>
+
+
+
+    <!-- WHY DO WE NEED THIS -->
+    <section class="section-content">
+      <h2 class="headline-content"><span>Why do we need this?</span></h2>
+      <img src="img/protocat.png" class="protocat">
+      <p class="copy-text">With growing trends like IoT and Smart Home an armada of devices uploads data into the cloud. That is why it becomes more important than ever to offer a decentralized alternative.</p>
+      <p class="copy-text">Experimental Platform is the first step towards a digital hub for people that strive for independence.</p>
+      <p class="copy-text">Join us as a hard- or software developer to create exciting applications in a fun and sustainable way.</p>
+      <a class="button" href="https://github.com/experimental-platform/" target="_blank">GitHub</a> <a class="button" href="https://groups.google.com/forum/#!forum/experimental-platform" target="_blank">Mailing List</a>
+    </section>
+
+
+
+    <!-- ROADMAP -->
+    <section class="section-content">
+      <h2 class="headline-content"><span>Roadmap</span></h2>
+      
+      <div class="roadmap">
+        <span class="timeline"></span>
+        <div class="milestone">
+          <h4>Now: Dev Alpha</h4>
+          <p>To jumpstart with Experimental Platform and save on your electricity bill, we sourced a very affordable low power hardware and preinstalled Experimental Platform on it.</p>
+          <a class="button">Order</a>
+        </div>
+        <div class="milestone">
+          <h4>March 2016:  Kickstarter</h4>
+          <p>Experimental Platform is the base of a consumer smart home hub that will be presented in a Kickstarter project.</p>
+          <a class="button" href="kickstarter.html" rel="modal:open">Notify me</a>
+        </div>
+        <div class="milestone">
+          <h4>April 2016:  Stable Release</h4>
+          <p>The software is stable and serves as the operating system on more than 2000 <a href="https://protonet.info" target="_blank">Protonet private cloud boxes</a>.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- BUILT WITH -->
+    <section class="section-content">
+      <h2 class="headline-content"><span>Built with awesome technologies</span></h2>
+      <p class="text-content">Experimental Platform is entirely based on open source components. These are the key technologies being used:</p>
+      <ul class="used-technologies">
+        <li title="Built using CoreOS Linux">
+          <a href="https://coreos.com/" target="_blank">
+            <figure>
+              <img src="img/coreos.png">
+            </figure>
+            <figcaption>CoreOS</figcaption>
+          </a>
+        </li>
+        <li title="Built using Docker">
+          <a href="https://www.docker.com/" target="_blank">
+            <figure>
+              <img src="img/docker.svg">
+            </figure>
+            <figcaption>Docker</figcaption>
+          </a>
+        </li>
+        <li title="Built using Dokku">
+          <a href="http://dokku.viewdocs.io/dokku/" target="_blank">
+            <figure>
+              <img src="img/dokku.png">
+            </figure>
+            <figcaption>Dokku</figcaption>
+          </a>
+        </li>
+        <li title="Built using GIT">
+          <a href="https://git-scm.com/" target="_blank">
+            <figure>
+              <img src="img/git.svg">
+            </figure>
+            <figcaption>Git</figcaption>
+          </a>
+        </li>
+        <li title="Built with Node.JS">
+          <a href="https://nodejs.org/" target="_blank">
+            <figure>
+              <img src="img/nodejs.svg">
+            </figure>
+            <figcaption>Node.js</figcaption>
+          </a>
+        </li>
+        <li title="Built with Travis CI">
+          <a href="https://travis-ci.com/" target="_blank">
+            <figure>
+              <img src="img/travis.png">
+            </figure>
+            <figcaption>Travis CI</figcaption>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer-content">
+      <div class="links">
+        <a href="https://github.com/experimental-platform/platform-configure-script" target="_blank">GitHub</a>
+        <a href="https://groups.google.com/forum/#!forum/experimental-platform" target="_blank">Mailing List</a>
+        <a href="https://github.com/experimental-platform/platform-configure-script/wiki" target="_blank">Docs</a>
+        <a href="https://github.com/experimental-platform/platform-configure-script/issues" target="_blank">Issue Tracker</a>
+      </div>
+      <a class="copyright-notice" target="_blank" href="https://protonet.info/">Initiated by Protonet</a>
+    </footer>
+
+    <a href="https://github.com/experimental-platform/platform-configure-script" target="_blank"><img class="github-banner" src="img/fork_me_on_github.png" alt="Fork Experimental Platform on GitHub"></a>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery-modal/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="bower_components/jquery-modal/jquery.modal.css" media="screen">
+    
+    <script>
+      // Self hosted piwik Tracking. Google Analytics sucks data.
+      // https://FreeYourData.org/
+      var _paq = _paq || [];
+      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+      _paq.push(["setCookieDomain", "*.experimental-platform.github.io"]);
+      _paq.push(["setDomains", ["*.experimental-platform.github.io"]]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://analytics.protorz.net/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 4]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+  </body>
+</html>

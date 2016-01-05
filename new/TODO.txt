@@ -1,0 +1,13 @@
+* seo, title, meta, og, favicon
+* rails loudspeakers --------- DONE
+* font embedding ------------- DONE
+* mobile
+* tracking ------------------- DONE
+* jasper in docs ------------- DONE
+* description for github example repos ------- DONE
+* downsize images
+* co2 app deutsch->english
+
+
+* complexity level for examples
+* jumping sumo example
