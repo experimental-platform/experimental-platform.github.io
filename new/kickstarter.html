@@ -1,11 +1,33 @@
 <section class="modal-content">
   <img src="img/beta_smart_home_hub.png" class="modal-img">
-  <form action="https://protonet.us4.list-manage.com/subscribe/post?u=c9e8e52c812dee7bfd031a95c&amp;id=c600c5c03d" method="post" target="iframe" class="modal-form">
-    <h2>Kickstarter in March 2016</h2>
+  <form action="https://github.us4.list-manage.com/subscribe/post?u=c9e8e52c812dee7bfd031a95c&amp;id=c600c5c03d" method="post" class="modal-form" id="kickstarter-form">
+    <h2>Be amongst the first Kickstarter backers</h2>
     <p>Our commitment is to build an end user product on top of Experimental Platform that becomes the center in your smart home and really cares about your data.</p>
-    <input type="email" name="EMAIL" placeholder="Enter email address" required>
+    <input type="email" name="EMAIL" placeholder="Enter email address" autofocus required>
     <input type="submit" value="Notify me" name="subscribe">
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c9e8e52c812dee7bfd031a95c_c600c5c03d" tabindex="-1" value=""></div>
     <p class="form-hint">We won't use your email for anything else than notifying you once the project is live.</p>
   </form>
 </section>
+<script>
+  $(function() {
+    var $form = $("#kickstarter-form");
+    $form.on("submit", function(e) {
+      $form.find("input[type=email]").attr("readonly", "readonly");
+      $form.find("input[type=submit]").attr("disabled", "disabled");
+
+      var $iframe = $("<iframe>", {
+        name: "kickstarter_iframe",
+        frameborder: 0,
+        style: "width:1px;height:1px;position:absolute;"
+      }).appendTo($form);
+
+      $form.attr("target", "kickstarter_iframe");
+
+      $iframe.on("load", function() {
+        $p = $("<p>", { text: "Please click the confirmation link in the email we just sent you. See you in March!" });
+        $form.replaceWith($p);
+      });
+    })
+  });
+</script>

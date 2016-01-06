@@ -638,7 +638,21 @@ a.copyright-notice {
 .modal-img {
   float: left;
   height: 149px;
+  width: 167px;
   margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+.modal-img-alpha {
+  height: 123px;
+  width: 190px;
+}
+
+#order-form input[type=email],
+#order-form input[type=text],
+#order-form input[type=submit] {
+  width: 270px;
+  margin-top: 4px;
 }
 
 .modal {
@@ -649,11 +663,19 @@ a.copyright-notice {
   margin: 0 0 10px 0;
 }
 
-.modal-form input[type=email] {
+.modal-form input[type=email],
+.modal-form input[type=text] {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   outline: 0;
+  box-sizing: border-box;
+}
+
+.modal-form input[type=text][readonly],
+.modal-form input[type=email][readonly] {
+  background: #eee;
+  color: #999;
 }
 
 .modal-form input[type=submit] {

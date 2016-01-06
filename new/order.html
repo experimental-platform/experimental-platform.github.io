@@ -1,0 +1,34 @@
+<section class="modal-content">
+  <img src="img/alpha_hardware.png" class="modal-img modal-img-alpha">
+  <form action="https://formspree.io/experimental-platform@protonet.info" method="post" class="modal-form" id="order-form">
+    <h2>Get pre-installed hardware</h2>
+    <p>We will install Experimental Platform on a standard hardware (Intel Dual-Core, 2 GB RAM) and ship it to you. It will cost around 175 €.</p>
+    <input type="text" name="name" placeholder="Enter your name" required autofocus><br>
+    <input type="email" name="email" placeholder="Enter email address" required><br>
+    <input type="hidden" name="_subject" value="Someone wants the Alpha Hardware">
+    <input type="submit" value="Get in touch">
+    <p class="form-hint">Your order won't be final. We will step in contact with you and figure out the details.</p>
+  </form>
+</section>
+<script>
+  $(function() {
+    var $form = $("#order-form");
+    $form.on("submit", function(e) {
+      $form.find("input[type=email], input[type=text]").attr("readonly", "readonly");
+      $form.find("input[type=submit]").attr("disabled", "disabled");
+
+      var $iframe = $("<iframe>", {
+        name: "order_iframe",
+        frameborder: 0,
+        style: "width:1px;height:1px;position:absolute;"
+      }).appendTo($form);
+
+      $form.attr("target", "order_iframe");
+
+      $iframe.on("load", function() {
+        $p = $("<p>", { text: "Thank you. We will step in contact with you as soon as possible." });
+        $form.replaceWith($p);
+      });
+    })
+  });
+</script>
