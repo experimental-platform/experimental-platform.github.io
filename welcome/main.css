@@ -1,0 +1,126 @@
+/* GLOBAL */
+@font-face {
+  font-family: "Experimental";
+  src:         url(fonts/experimental_regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Experimental";
+  src:         url(fonts/experimental_bold.woff) format("woff");
+  font-weight: bold;
+}
+
+html, input, select {
+  font-family: Experimental, sans-serif;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing:     antialiased;
+  -moz-osx-font-smoothing:    grayscale;
+  margin:                     0;
+  color:                      #000;
+  line-height:                1.3;
+}
+
+a {
+  color:           inherit;
+  text-decoration: underline;
+}
+
+code {
+  border:      1px solid black;
+  padding:     6px;
+  margin:      6px;
+  display:     block;
+  white-space: pre-wrap;
+}
+
+/* GENERAL */
+.button-interaction {
+  text-decoration: none;
+  cursor:          pointer;
+}
+
+.input-interaction,
+.button-interaction {
+  margin:     12px 0;
+  padding:    12px;
+  border:     1px solid #aaa;
+  background: rgba(0,0,0,0);
+}
+
+.section-content {
+  margin:             2em 12px;
+  overflow:           hidden;
+  box-sizing:         border-box;
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+  .section-content {
+    width:  900px;
+    margin: 4em auto;
+  }
+}
+
+.headline-content {
+  font-size:   42px;
+  text-align:  center;
+  margin:      0 0 10px;
+  font-weight: normal;
+  position:    relative;
+}
+
+.headline-content:before {
+  content:    "";
+  top:        52%;
+  left:       0;
+  right:      0;
+  height:     1px;
+  position:   absolute;
+  background: #ddd;
+}
+
+.headline-content span {
+  background: #fff;
+  padding:    0 20px;
+  position:   relative;
+}
+
+/* SPECIFIC */
+.teaser {
+  text-transform: uppercase;
+  text-align:     center;
+  font-size:      2em;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.notify-me,
+.order-hardware {
+  text-align: center;
+  margin:     5em auto;
+  font-size:  1.4em;
+}
+
+.creators {
+  list-style-type: none;
+  padding-left:    0;
+}
+
+.creators__profile {
+  display:      inline-block;
+  width:        25%;
+  text-align:   center;
+  margin-right: -8px;
+}
+

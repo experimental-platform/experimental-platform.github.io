@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>A heroku-like platform for IoT projects | Experimental Platform</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="author" content="Protonet GmbH, Hamburg, Germany">
+    <meta name="description" content="Experimental Platform provides an easy way to deploy apps on local hardware without the hassle to setup the environment. It enables developers and makers to focus on the things that matter.">
+    <meta content="Experimental Platform" property="og:site_name">
+    <meta content="website" property="og:type">
+    <meta content="https://experimental-platform.github.io/img/og_image.jpg" property="og:image">
+    <meta content="Experimental Platform - Heroku-like platform for IoT projects" property="og:title">
+    <meta content="https://experimental-platform.github.io/" property="og:url">
+    <meta content="Experimental Platform provides an easy way to deploy apps on local hardware without the hassle to setup the environment. It enables developers and makers to focus on the things that matter." property="og:description">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+  </head>
+
+  <body>
+    <div class="teaser section-content">
+      <h1 class="logo" title="Build great IoT applications with web technologies">Experimental Platform</h1>
+      <div class="teaser__text">
+        the easiest way to connect smart devices
+      </div>
+    </div><!-- /.teaser -->
+
+    <p class="description section-content">
+      Experimental Platform provides an easy way to deploy apps on local hardware without the hassle to setup the environment. It enables developers and makers to focus on the things that matter.
+    </p>
+
+    <div class="notify-me"><a class="button-interaction" href="newsletter.html" rel="modal:open">Notify me</a></div>
+
+    <div class="tutorial section-content">
+      <h2 class="headline-content"><span>The 5 Minute Promise</span></h2>
+      <p>Installing platform and creating your first app only takes a couple of minutes.<br>Your app will instantly be available on the internet while it's still hosted on your local machine.</p>
+      <ol class="installation-steps">
+        <li>
+          <p class="primary">Follow <a href="https://coreos.com/os/docs/latest/installing-to-disk.html" target="_blank">these instructions</a> to install CoreOS Linux on your local hardware.</p>
+          <p class="secondary">Read our <a target="_blank" href="https://github.com/experimental-platform/platform-configure-script#requirements">hardware requirements</a> first. Alternatively you can install it in a <a href="https://github.com/experimental-platform/platform-configure-script#install-in-local-vm" target="_blank">local VM</a> or simply <a href="order.html" rel="modal:open">order</a> pre-installed hardware from us.</p>
+        </li>
+        <li>
+          <p class="primary">Install Experimental Platform by executing this one-liner on the hardware:</p>
+          <pre><code>curl https://raw.githubusercontent.com/experimental-platform/platform-configure-script/master/platform-configure.sh | sudo PLATFORM_INSTALL_OSUPDATE=true PLATFORM_INSTALL_REBOOT=true PLATFORM_SYS_GROUP=protonet sh</code></pre>
+        </li>
+        <li>
+          <p class="primary">Open <code>http://paleale.local/</code> (or the corresponding IP) in your browser and setup Experimental Platform.</p>
+          <p class="secondary">You will be asked for a name, password and your public ssh key.</p>
+        </li>
+        <li>
+          <p class="primary">Now deploy your first "hello world" app from your computer:</p>
+          <code>git clone https://github.com/experimental-platform/nodejs-hello-world.git && cd nodejs-hello-world
+git remote add platform ssh://dokku@your-box.local:8022/nodejs-hello-world
+git push platform master</code>
+        </li>
+        <li>
+          <p class="primary">That's it! Your app is now available on the internet and within your local network.</p>
+          <p class="secondary">Locally via <code>http://your-name.local/nodejs-hello-world/</code> and remotely via <code>https://your-name.protonet.info/nodejs-hello-world/</code></p>
+        </li>
+      </ol>
+      <div class="order-hardware"><a class="button-interaction" href="order.html">Order the hardware</a></div>
+    </div><!-- /.tutorial -->
+
+    <div class="more-tutorials section-content">
+      <h2 class="more-tutorials headline-content"><span>More promises</span></h2>
+    </div><!-- /.more-tutorials -->
+
+    <div class="credits section-content">
+      <h2 class="headline-content credits"><span>Made with Love by Protonet</span></h2>
+      <ul class="creators">
+        <li class="creators__profile">
+          Kamil Domański
+        </li>
+        <li class="creators__profile">
+          Christopher Blum
+        </li>
+        <li class="creators__profile">
+          Markus Ulsass
+        </li>
+        <li class="creators__profile">
+          Hinnerk Hardt
+        </li>
+        <li class="creators__profile">
+          Ömür Özkir
+        </li>
+        <li class="creators__profile">
+          Pascal Friederich
+        </li>
+      </ul><!-- /.creators -->
+    </div><!-- /.credits -->
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery-modal/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="bower_components/jquery-modal/jquery.modal.css" media="screen">
+
+    <script>
+      // Self hosted piwik Tracking. Google Analytics sucks data.
+      // https://FreeYourData.org/
+      var _paq = _paq || [];
+      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+      _paq.push(["setCookieDomain", "*.experimental-platform.github.io"]);
+      _paq.push(["setDomains", ["*.experimental-platform.github.io"]]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://analytics.protorz.net/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 4]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+  </body>
+</html>
+
