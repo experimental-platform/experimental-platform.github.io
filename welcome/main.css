@@ -94,6 +94,17 @@ code {
 }
 
 /* SPECIFIC */
+.teaser,
+.description,
+.credits,
+.creators,
+.creators__profile {
+  overflow:           hidden;
+  box-sizing:         border-box;
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+}
+
 .teaser {
   text-transform: uppercase;
   text-align:     center;
@@ -118,9 +129,27 @@ code {
 }
 
 .creators__profile {
-  display:      inline-block;
-  width:        25%;
-  text-align:   center;
-  margin-right: -8px;
+  display:        inline-block;
+  width:          32%;
+  width:          32%;
+  text-align:     center;
+  margin-right:   -8px;
+  vertical-align: middle;
+}
+
+.profile__portrait {
+  max-width:  200px;
+  max-height: 200px;
+  display:    inline-block;
+  margin:     12px;
+}
+
+.profile__portrait img {
+  display:               inline-block;
+  width:                 100%;
+  height:                100%;
+  border-radius:         50%;
+  -moz-border-radius:    50%;
+  -webkit-border-radius: 50%;
 }
 
