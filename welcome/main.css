@@ -108,11 +108,13 @@ $grayscale-mask: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v
 
 
 /* SPECIFIC */
+.button-interaction,
 .teaser,
 .description,
 .credits,
 .creators,
-.creators__profile {
+.creators__profile,
+.order-hardware {
   overflow:           hidden;
   box-sizing:         border-box;
   -moz-box-sizing:    border-box;
@@ -135,6 +137,22 @@ $grayscale-mask: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v
   text-align: center;
   margin:     5em auto;
   font-size:  1.4em;
+}
+
+.order-hardware .button-interaction {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .order-hardware .button-interaction {
+    width:   32%;
+    display: inline-block;
+    margin:  3px;
+  }
+}
+
+.order-hardware__note {
+  font-size: 0.8em;
 }
 
 .creators {
@@ -164,3 +182,99 @@ $grayscale-mask: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v
   height:  100%;
 }
 
+.examples {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.examples li {
+  flex: 1 1 22%;
+  margin-right: 20px;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+  display: block;
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+
+.examples li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.examples li:nth-child(-n+4) {
+  margin-bottom: 20px;
+}
+
+.examples a {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.examples h4,
+.examples p {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.examples h4 {
+  font-size: 16px;
+}
+
+.examples p {
+  font-size: 12px;
+  color: #666;
+}
+
+.img-example {
+  display: block;
+  height: 100px;
+  width: 100%;
+  background-color: #eee;
+  background-size: cover;
+  background-position: center center;
+  -webkit-filter: grayscale(0.7);
+  filter: grayscale(0.7);
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.3);
+  transition: -webkit-filter 0.3s, filter 0.3s, box-shadow 0.3s;
+}
+
+a:hover .img-example {
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.2);
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+.img-example-jasper {
+  background-image: url(img/jasper_example.jpg);
+}
+
+.img-example-co2 {
+  background-image: url(img/co2_air_quality_example.jpg);
+}
+
+.img-example-chromecast {
+  background-image: url(img/chromecast_example3.jpg);
+}
+
+.img-example-webcam {
+  background-image: url(img/webcam_example.jpg);
+}
+
+.img-example-radio {
+  background-image: url(img/radio_socket_example.jpg);
+}
+
+.img-example-speakers {
+  background-image: url(img/loudspeakers_example2.jpg);
+}
+
+.img-example-live-webcam {
+  background-image: url(img/webcam_live_stream_example.jpg);
+}
+
+.img-example-voice-recognition {
+  background-image: url(img/voice_recognition_example.jpg);
+}
