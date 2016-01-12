@@ -118,6 +118,17 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
   -webkit-box-sizing: border-box;
 }
 
+.teaser .logo:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 36px;
+  height: 36px;
+  margin: -4px 8px 0 0;
+  background: url(img/hexagon_white.svg) no-repeat center center;
+  background-size: 100% auto;
+}
+
 .teaser {
   text-transform: uppercase;
   text-align:        center;
@@ -130,15 +141,41 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
   padding:           3em;
 }
 
+.teaser__header {
+  font-size:   1em;
+  font-weight: normal;
+}
+
+.teaser__text {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
 .description {
   text-align: center;
   font-size: 1.2em;
 }
 
+.promise {
+  border: 1px solid #aaa;
+  padding: 12px;
+  font-size: 1.4em;
+}
+
+.promise__header {
+  font-weight: normal;
+  text-align:  center;
+  font-size:   2em;
+}
+
+.experimental-platform-setup {
+  color: pink;
+}
+
 .notify-me,
 .order-hardware {
   text-align: center;
-  margin:     5em auto;
+  margin:     2em auto;
   font-size:  1.4em;
 }
 
@@ -187,20 +224,20 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 
 /* EXAMPLES */
 .examples {
-  margin: 0;
-  padding: 0;
-  display: flex;
+  margin:    0;
+  padding:   0;
+  display:   flex;
   flex-wrap: wrap;
 }
 
 .examples li {
-  flex: 1 1 22%;
-  margin-right: 20px;
+  flex:           1 1 22%;
+  margin-right:   20px;
   padding-bottom: 12px;
-  box-sizing: border-box;
-  display: block;
-  border: 1px solid #eee;
-  border-radius: 3px;
+  box-sizing:     border-box;
+  display:        block;
+  border:         1px solid #eee;
+  border-radius:  3px;
 }
 
 .examples li:nth-child(4n) {
@@ -362,7 +399,13 @@ a:hover .img-example {
 }
 
 .outlook-banner {
-  width: 100%;
+  width:   100%;
   display: inline-block
+}
+
+.footer {
+  background-color: black;
+  color:            white;
+  padding:          12px;
 }
 

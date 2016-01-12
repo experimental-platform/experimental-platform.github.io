@@ -17,22 +17,34 @@
 
   <body>
     <div class="teaser">
-      <h1 title="Build great IoT applications with web technologies">Experimental Platform</h1>
-      <div class="teaser__text">
-        the easiest way to connect smart devices
-      </div>
+      <h1 class="teaser__header logo" title="Build great IoT applications with web technologies">Experimental Platform</h1>
+      <h3 class="teaser__text">
+        the easiest way to <br>connect smart devices
+      </h3>
     </div><!-- /.teaser -->
 
     <p class="description section-content">
       Experimental Platform provides an easy way to deploy apps on local hardware without the hassle to setup the environment. It enables developers and makers to focus on the things that matter.
     </p>
 
-    <div class="notify-me"><a class="button-interaction" href="newsletter.html" rel="modal:open">Notify me</a></div>
+    <div class="promise section-content">
+      <h2 class="promise__header">Our 5 Minute Promise</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
 
     <div class="tutorial section-content">
-      <h2 class="headline-content"><span>The 5 Minute Promise</span></h2>
+      <p>
+        Here is our example project: Connect a CO2 Sensor to this Smartlight.<br>
+        Control the Lightbulb depending on the CO2 levels.
+      </p>
+      <p>
+        If you aren't already running the experimental platform, you will need to set it up. Luckily this is very easy:
+      </p>
       <p>Installing platform and creating your first app only takes a couple of minutes.<br>Your app will instantly be available on the internet while it's still hosted on your local machine.</p>
-      <ol class="installation-steps">
+      [popup to setup script]
+      <ol class="experimental-platform-setup">
         <li>
           <p class="primary">Follow <a href="https://coreos.com/os/docs/latest/installing-to-disk.html" target="_blank">these instructions</a> to install CoreOS Linux on your local hardware.</p>
           <p class="secondary">Read our <a target="_blank" href="https://github.com/experimental-platform/platform-configure-script#requirements">hardware requirements</a> first. Alternatively you can install it in a <a href="https://github.com/experimental-platform/platform-configure-script#install-in-local-vm" target="_blank">local VM</a> or simply <a href="order.html" rel="modal:open">order</a> pre-installed hardware from us.</p>
@@ -45,6 +57,9 @@
           <p class="primary">Open <code>http://paleale.local/</code> (or the corresponding IP) in your browser and setup Experimental Platform.</p>
           <p class="secondary">You will be asked for a name, password and your public ssh key.</p>
         </li>
+      </ol>
+
+      <ol class="installation-steps">
         <li>
           <p class="primary">Now deploy your first "hello world" app from your computer:</p>
           <code>git clone https://github.com/experimental-platform/nodejs-hello-world.git && cd nodejs-hello-world
@@ -61,9 +76,9 @@ git push platform master</code>
         <p class="order-hardware__note">
           If you like to try the example on real hardware, you can for example order the modules via the links below.
         </p>
-        <a class="button-interaction" href="http://www.newegg.com/Product/Product.aspx?Item=N82E16856501013" target="_blank">Order the Mini PC</a>
-        <a class="button-interaction" href="http://www.co2meter.com/collections/co2-sensors/products/s8-miniature-co2-sensor" target="_blank">Order the CO2 Sensor</a>
-        <a class="button-interaction" href="http://www.amazon.com/dp/B014H2P4KW/ref=sr_ph?ie=UTF8&amp;qid=1452304434&amp;sr=1&amp;keywords=philips+hue+ambiance+white+and+color" target="_blank">Order the Smartlight</a>
+        <a class="button-interaction" href="http://www.co2meter.com/collections/co2-sensors/products/s8-miniature-co2-sensor" target="_blank">Order the CO2 Sensor(co2meter.com)</a>
+        <a class="button-interaction" href="http://www.amazon.com/dp/B014H2P4KW/ref=sr_ph?ie=UTF8&amp;qid=1452304434&amp;sr=1&amp;keywords=philips+hue+ambiance+white+and+color" target="_blank">Order the Smartlight (amazon.com)</a>
+        <a class="button-interaction" href="http://www.newegg.com/Product/Product.aspx?Item=N82E16856501013" target="_blank">Order the Mini PC (newegg.com)</a>
         <p class="order-hardware__note">
           These links lead to external stores so you can quickly buy these devices and reproduce this project in real life (delivery might take more than 5 minutes though :) ).
         </p>
@@ -72,6 +87,8 @@ git push platform master</code>
         </p>
       </div>
     </div><!-- /.tutorial -->
+
+    <div class="notify-me"><a class="button-interaction" href="newsletter.html" rel="modal:open">Notify me</a></div>
 
     <div class="outlooks section-content">
       <h2 class="headline-content"><span>Outlook</span></h2>
@@ -98,6 +115,13 @@ git push platform master</code>
         </li>
       </ol>
     </div><!-- /.overlook -->
+
+    <div class="technologies section-content">
+      <h2 class="headline-content"><span>Technologies</span></h2>
+      <p>
+        This project wouldn't be possible without the extensive use of other great open source technologies: Docker, Dokku, XYZ, Node.js, Go, abc and so many more. The code is open source under Apache 2.0. Feel free to build, fork and share.
+      </p>
+    </div>
 
     <div class="more-tutorials section-content">
       <h2 class="headline-content"><span>More examples</span></h2>
@@ -180,9 +204,9 @@ git push platform master</code>
       <h2 class="headline-content credits"><span>Made with Love by Protonet</span></h2>
       <ul class="creators">
         <li class="creators__profile">
-          <a href="https://github.com/kdomanski" class="profile">
-            <div class="profile__portrait hexagon"><img src="img/kamil.jpg" alt="Kamil Domański"></div>
-            <div class="profile__name">Kamil Domański</div>
+          <a href="https://github.com/https://github.com/hinnerk" class="profile">
+            <div class="profile__portrait hexagon"><img src="img/hinnerk.jpg" alt="Hinnerk Hardt"></div>
+            <div class="profile__name">Hinnerk Hardt</div>
           </a>
         </li>
         <li class="creators__profile">
@@ -192,15 +216,15 @@ git push platform master</code>
           </a>
         </li>
         <li class="creators__profile">
-          <a href="https://github.com/markbeee" class="profile">
-            <div class="profile__portrait hexagon"><img src="img/markus.png" alt="Markus Ulsass"></div>
-            <div class="profile__name">Markus Ulsass</div>
+          <a href="https://github.com/kdomanski" class="profile">
+            <div class="profile__portrait hexagon"><img src="img/kamil.jpg" alt="Kamil Domański"></div>
+            <div class="profile__name">Kamil Domański</div>
           </a>
         </li>
         <li class="creators__profile">
-          <a href="https://github.com/https://github.com/hinnerk" class="profile">
-            <div class="profile__portrait hexagon"><img src="img/hinnerk.jpg" alt="Hinnerk Hardt"></div>
-            <div class="profile__name">Hinnerk Hardt</div>
+          <a href="https://github.com/markbeee" class="profile">
+            <div class="profile__portrait hexagon"><img src="img/markus.png" alt="Markus Ulsass"></div>
+            <div class="profile__name">Markus Ulsass</div>
           </a>
         </li>
         <li class="creators__profile">
@@ -217,6 +241,10 @@ git push platform master</code>
         </li>
       </ul><!-- /.creators -->
     </div><!-- /.credits -->
+
+    <div class="footer">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
 
     <script src="experimental.platform.min.js"></script>
 
