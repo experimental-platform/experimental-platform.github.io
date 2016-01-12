@@ -16,8 +16,8 @@
   </head>
 
   <body>
-    <div class="teaser section-content">
-      <h1 class="logo" title="Build great IoT applications with web technologies">Experimental Platform</h1>
+    <div class="teaser">
+      <h1 title="Build great IoT applications with web technologies">Experimental Platform</h1>
       <div class="teaser__text">
         the easiest way to connect smart devices
       </div>
@@ -58,9 +58,12 @@ git push platform master</code>
       </ol>
 
       <div class="order-hardware">
+        <p class="order-hardware__note">
+          If you like to try the example on real hardware, you can for example order the modules via the links below.
+        </p>
         <a class="button-interaction" href="http://www.newegg.com/Product/Product.aspx?Item=N82E16856501013" target="_blank">Order the Mini PC</a>
         <a class="button-interaction" href="http://www.co2meter.com/collections/co2-sensors/products/s8-miniature-co2-sensor" target="_blank">Order the CO2 Sensor</a>
-        <a class="button-interaction" href="http://www.amazon.com/dp/B014H2P4KW/ref=sr_ph?ie=UTF8&qid=1452304434&sr=1&keywords=philips+hue+ambiance+white+and+color" target="_blank">Order the Smartlight</a>
+        <a class="button-interaction" href="http://www.amazon.com/dp/B014H2P4KW/ref=sr_ph?ie=UTF8&amp;qid=1452304434&amp;sr=1&amp;keywords=philips+hue+ambiance+white+and+color" target="_blank">Order the Smartlight</a>
         <p class="order-hardware__note">
           These links lead to external stores so you can quickly buy these devices and reproduce this project in real life (delivery might take more than 5 minutes though :) ).
         </p>
@@ -70,9 +73,35 @@ git push platform master</code>
       </div>
     </div><!-- /.tutorial -->
 
+    <div class="outlooks section-content">
+      <h2 class="headline-content"><span>Outlook</span></h2>
+      <ol class="outlook-features">
+        <li class="outlook">
+          <h3 class="headline-content"><span>REST API</span></h3>
+          <img class="outlook-banner" src="img/outlook-rest.jpg" alt="rest api">
+          <p>A standard for the internet-of-things (IoT)? It's already here: REST. So no need to reinvent the weel. EP (aims to) provide(s) an easy way to access (or wrap) all of a smart devices capability. Wether it's reading (sensing) sensors or actuating actuators.</p>
+        </li>
+        <li class="outlook">
+          <h3 class="headline-content"><span>Device Discovery</span></h3>
+          <img class="outlook-banner" src="img/outlook-discovery.jpg" alt="device discovery">
+          <p>Working on IoT projects shouldn't mean spending hours trying to find your devices, getting them to connect and figure out their APIs. EP comes with a simple device discovery mechanism that is both simple to use and simple to expand.</p>
+        </li>
+        <li class="outlook">
+          <h3 class="headline-content"><span>Firmware Directory</span></h3>
+          <img class="outlook-banner" src="img/outlook-firmware.jpg" alt="firmware directory">
+          <p>That CO2 sensor you always wanted to build and hook up to your wireless network? Somebody already built that! By building up a directory of firmwares and an easy way to flash your devices we'll be able to build upon each others work. That's what it's all about isn't it?</p>
+        </li>
+        <li class="outlook">
+          <h3 class="headline-content"><span>Services</span></h3>
+          <img class="outlook-banner" src="img/outlook-services.jpg" alt="services">
+          <p>That cool app that you just pushed to the experimental platform now needs a simple messaging layer? What if you could simply add a service to provide that? Just like on Heroku, EP provides a simple way to include services and use them in your application.</p>
+        </li>
+      </ol>
+    </div><!-- /.overlook -->
+
     <div class="more-tutorials section-content">
       <h2 class="headline-content"><span>More examples</span></h2>
-      <p class="text-content">A list of open source reference apps built with experimental platform. <a target="_blank" href="https://github.com/experimental-platform/platform-configure-script/wiki#examples-with-connected-hardware">More can be found here.</a></p>
+      <p class="text-content expamples__note">A list of open source reference apps built with experimental platform. <a target="_blank" href="https://github.com/experimental-platform/platform-configure-script/wiki#examples-with-connected-hardware">More can be found here.</a></p>
       <ul class="examples">
         <li>
           <a href="https://github.com/experimental-platform/example-dockerfile-jasper" target="_blank">
@@ -142,6 +171,9 @@ git push platform master</code>
           </a>
         </li>
       </ul>
+      <p class="examples__note">
+        And the best part: experimental platform makes it dead easy to combine them.
+      </p>
     </div><!-- /.more-tutorials -->
 
     <div class="credits section-content">
@@ -170,7 +202,6 @@ git push platform master</code>
             <div class="profile__portrait hexagon"><img src="img/hinnerk.jpg" alt="Hinnerk Hardt"></div>
             <div class="profile__name">Hinnerk Hardt</div>
           </a>
-        </li>
         </li>
         <li class="creators__profile">
           <a href="https://github.com/oem" class="profile">

@@ -110,6 +110,7 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 .credits,
 .creators,
 .creators__profile,
+.outlook,
 .order-hardware {
   overflow:           hidden;
   box-sizing:         border-box;
@@ -119,8 +120,14 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 
 .teaser {
   text-transform: uppercase;
-  text-align:     center;
-  font-size:      2em;
+  text-align:        center;
+  font-size:         2em;
+  color:             white;
+  background-image:  url(img/banner.jpg);
+  background-size:   cover;
+  background-repeat: no-repeat;
+  width:             100%;
+  padding:           3em;
 }
 
 .description {
@@ -178,6 +185,7 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
   height:  100%;
 }
 
+/* EXAMPLES */
 .examples {
   margin: 0;
   padding: 0;
@@ -222,6 +230,10 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 .examples p {
   font-size: 12px;
   color: #666;
+}
+
+.examples__note {
+  text-align: center;
 }
 
 .img-example {
@@ -332,3 +344,24 @@ a:hover .img-example {
   background-image: url(img/docker.svg);
 }
 
+.outlook-features {
+  list-style-type: none;
+  padding:         0;
+}
+
+.outlook {
+  width:          50%;
+  display:        inline-block;
+  margin-right:   -8px;
+  vertical-align: top;
+  padding:        12px 24px;
+}
+
+.outlook .headline-content {
+  font-size: 1.2em;
+}
+
+.outlook-banner {
+  width: 100%;
+  display: inline-block
+}
