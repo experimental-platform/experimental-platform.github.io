@@ -14,10 +14,19 @@ module.exports = function (grunt) {
           mangle: false
         }
       }
+    },
+
+    cssmin: {
+      target: {
+        files: {
+          'experimental.platform.min.css': ['node_modules/jquery-modal/jquery.modal.css', 'main.css']
+        }
+      }
     }
   });
 
+  grunt.registerTask('buildcss', ['cssmin']);
   grunt.registerTask('buildjs', ['uglify']);
-  grunt.registerTask('default', ['buildjs']);
+  grunt.registerTask('default', ['buildjs', 'cssmin']);
 };
 
