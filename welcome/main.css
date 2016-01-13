@@ -366,6 +366,11 @@ a:hover .img-example {
   background-image: url(img/rails.svg);
 }
 
+.img-technology-ruby:after {
+  background-size:  auto 20px;
+  background-image: url(img/ruby.svg);
+}
+
 .img-technology-php:after {
   background-size:  auto 26px;
   background-image: url(img/php.svg);
