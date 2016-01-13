@@ -44,6 +44,42 @@
       <div class="setup-platform"><a class="button-interaction" href="setup.html" rel="modal:open">Setup experimental platform</a></div>
       <p>Installing platform and creating your first app only takes a couple of minutes.<br>Your app will instantly be available on the internet while it's still hosted on your local machine.</p>
 
+      <ol class="tutorial__steps">
+        <li>
+          <h4 class="primary">Connect to the CO₂ Sensor</h4>
+          <p class="primary">
+            Connecting to the CO₂ Seonsor is very easy. You can read out the CO₂ levels via a simple HTTP request:
+          </p>
+          <code>GET host:3200/devices/:sensorname</code>
+          <p class="secondary">
+            Replace the host with the address of the machine the experimental platform is running on.
+          </p>
+        </li>
+        <li>
+          <h4>Connect to the Philips Hue</h4>
+          <p class="primary">
+            Controlling the Philips Hue lightbulb couldn't be easier, just use an http request to control the lightbulb:
+          </p>
+          <code>PUT: hue.local/api/:token/lights/:lights_id/state</code>
+        </li>
+        <li>
+          <h4>See it in action</h4>
+          <p class="primary">
+            We prepared an example app to demonstrate all the different parts acting together to create an actually useful app: Change the color of the lightbulb depending on the CO₂ levels. <a href="https://github.com/experimental-platform/example-co2-to-hue">Check it out on github </a>.
+          </p>
+          <div>
+            <img src="img/co2demo.gif" alt="co2demo" class="tutorial__screenshot">
+          </div>
+          <code>git clone https://github.com/experimental-platform/example-co2-to-hue.git && cd example-co2-to-hue</code>
+        </li>
+        <li>
+          <h4>Deploy it</h4>
+        </li>
+        <li>
+          <h4>That's it, you are done!</h4>
+        </li>
+      </ol><!-- /.tutorial__steps -->
+
       <ol class="installation-steps">
         <li>
           <p class="primary">Now deploy your first "hello world" app from your computer:</p>
