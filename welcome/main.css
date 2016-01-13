@@ -454,12 +454,12 @@ a:hover .img-example {
 
 .supported-technologies figcaption {
   font-size: 14px;
-  color:     #ddd;
+  color:     #000;
   opacity:   0;
 }
 
 .supported-technologies li:hover figcaption {
-  opacity: 0.9999;
+  opacity: 1;
 }
 
 .supported-technologies li:hover figure {
