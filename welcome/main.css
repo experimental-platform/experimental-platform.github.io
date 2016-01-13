@@ -440,18 +440,18 @@ a:hover .img-example {
 }
 
 .supported-technologies figure {
-  margin: 0;
-  padding: 0 16px;
-  opacity: 0.8;
+  margin:         0;
+  padding:        0 16px;
+  opacity:        0.8;
   -webkit-filter: grayscale(0.7);
-  filter: grayscale(0.7);
-  transition: opacity 0.2s, filter 0.2s, -webkit-filter 0.2s;
+  filter:         grayscale(0.7);
+  transition:     opacity 0.2s, filter 0.2s, -webkit-filter 0.2s;
 }
 
 .supported-technologies figcaption {
   font-size: 14px;
-  color: #ddd;
-  opacity: 0;
+  color:     #ddd;
+  opacity:   0;
 }
 
 .supported-technologies li:hover figcaption {
@@ -522,5 +522,21 @@ a:hover .img-example {
   right:    0;
   width:    149px;
   height:   149px;
+}
+
+.footer-container {
+  margin: 12px auto;
+  padding: 12px 0;
+  border-bottom: 1px solid white;
+}
+
+.footer__logo-link {
+  display:        inline-block;
+  background:     url(img/protonet-logo.png) left center no-repeat;
+  width:          140px;
+  height:         40px;
+  padding:        0;
+  margin-bottom:  6px;
+  vertical-align: middle;
 }
 
