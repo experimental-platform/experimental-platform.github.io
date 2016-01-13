@@ -524,10 +524,20 @@ a:hover .img-example {
   height:   149px;
 }
 
+.footer {
+  text-transform: uppercase;
+  font-size: .9em;
+}
+
 .footer-container {
   margin:        12px auto;
   padding:       12px 0;
-  border-bottom: 1px solid white;
+}
+
+.footer__logo-container {
+  border-bottom:  1px solid white;
+  padding-bottom: 12px;
+  margin-bottom:  24px;
 }
 
 .footer__logo-link {
@@ -538,5 +548,28 @@ a:hover .img-example {
   padding:        0;
   margin-bottom:  6px;
   vertical-align: middle;
+}
+
+.footer__newsletter .button-interaction,
+.footer__newsletter,
+.footer__newsletter .input-interaction {
+  color:          white;
+  text-transform: uppercase;
+}
+.footer__newsletter .input-interaction::-webkit-input-placeholder { /* WebKit browsers */
+    color: white;
+}
+.footer__newsletter .input-interaction:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: white;
+}
+.footer__newsletter .input-interaction::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: white;
+}
+.footer__newsletter .input-interaction:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: white;
+}
+
+.newsletter-label {
+  padding-right: 12px;
 }
 
