@@ -504,3 +504,23 @@ a:hover .img-example {
 .tutorial__screenshot {
   width: 100%;
 }
+
+.credits__protonet {
+  display:        inline-block;
+  background:     url(img/protonet_orange.png) left center no-repeat;
+  width:          140px;
+  height:         40px;
+  padding:        0;
+  margin-bottom:  6px;
+  vertical-align: middle;
+}
+
+.github-banner {
+  z-index:  1;
+  position: fixed;
+  top:      0;
+  right:    0;
+  width:    149px;
+  height:   149px;
+}
+
