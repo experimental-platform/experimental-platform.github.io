@@ -181,6 +181,13 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 
 .order-hardware .button-interaction {
   display: block;
+  font-size: .8em;
+  vertical-align: middle;
+}
+
+.order-hardware__store {
+  display: block;
+  font-size: .7em;
 }
 
 @media (min-width: 1024px) {
