@@ -414,3 +414,77 @@ a:hover .img-example {
   padding:          12px;
 }
 
+.supported-technologies {
+  text-align: center;
+}
+
+.supported-technologies ul {
+  margin: 0 0 10px 0;
+  padding-left: 0;
+}
+
+.supported-technologies li {
+  display: inline-block;
+}
+
+.supported-technologies img {
+  height: 60px;
+}
+
+.supported-technologies figure {
+  margin: 0;
+  padding: 0 16px;
+  opacity: 0.8;
+  -webkit-filter: grayscale(0.7);
+  filter: grayscale(0.7);
+  transition: opacity 0.2s, filter 0.2s, -webkit-filter 0.2s;
+}
+
+.supported-technologies figcaption {
+  font-size: 14px;
+  color: #ddd;
+  opacity: 0;
+}
+
+.supported-technologies li:hover figcaption {
+  opacity: 0.9999;
+}
+
+.supported-technologies li:hover figure {
+  opacity: 1;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.nodejs figure,
+.rails figure,
+.golang figure,
+.php figure,
+.python figure,
+.dockerfile figure {
+  animation: fade 0.8s;
+}
+
+.nodejs figure {
+  animation-delay: 2s;
+}
+
+.rails figure {
+  animation-delay: 2.2s;
+}
+
+.golang figure {
+  animation-delay: 2.4s;
+}
+
+.php figure {
+  animation-delay: 2.6s;
+}
+
+.python figure {
+  animation-delay: 2.8s;
+}
+
+.dockerfile figure {
+  animation-delay: 3s;
+}
