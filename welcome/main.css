@@ -119,18 +119,18 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 }
 
 .teaser .logo:before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  width: 36px;
-  height: 36px;
-  margin: -4px 8px 0 0;
-  background: url(img/hexagon_white.svg) no-repeat center center;
+  content:         "";
+  display:         inline-block;
+  vertical-align:  middle;
+  width:           36px;
+  height:          36px;
+  margin:          -4px 8px 0 0;
+  background:      url(img/hexagon_white.svg) no-repeat center center;
   background-size: 100% auto;
 }
 
 .teaser {
-  text-transform: uppercase;
+  text-transform:    uppercase;
   text-align:        center;
   font-size:         2em;
   color:             white;
