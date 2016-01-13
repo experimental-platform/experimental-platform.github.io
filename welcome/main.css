@@ -168,6 +168,10 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
   font-size:   2em;
 }
 
+.promise__text {
+  text-align: center;
+}
+
 .notify-me,
 .order-hardware,
 .setup-platform {
@@ -301,35 +305,35 @@ a:hover .img-example {
 }
 
 .img-example-jasper {
-  background-image: url(img/jasper_example.jpg);
+  background-image: url(img/microphone2.jpg);
 }
 
 .img-example-co2 {
-  background-image: url(img/co2_air_quality_example.jpg);
+  background-image: url(img/board.jpg);
 }
 
 .img-example-chromecast {
-  background-image: url(img/chromecast_example3.jpg);
+  background-image: url(img/chromecast.jpg);
 }
 
 .img-example-webcam {
-  background-image: url(img/webcam_example.jpg);
+  background-image: url(img/webcam.jpg);
 }
 
 .img-example-radio {
-  background-image: url(img/radio_socket_example.jpg);
+  background-image: url(img/remote.jpg);
 }
 
 .img-example-speakers {
-  background-image: url(img/loudspeakers_example2.jpg);
+  background-image: url(img/speaker.jpg);
 }
 
 .img-example-live-webcam {
-  background-image: url(img/webcam_live_stream_example.jpg);
+  background-image: url(img/cat.jpg);
 }
 
 .img-example-voice-recognition {
-  background-image: url(img/voice_recognition_example.jpg);
+  background-image: url(img/microphone.jpg);
 }
 
 .img-technology-nodejs {
@@ -501,7 +505,8 @@ a:hover .img-example {
   width: 50%;
 }
 
-.tutorial__screenshot {
+.tutorial__screenshot,
+.tutorial__banner {
   width: 100%;
 }
 
@@ -557,16 +562,16 @@ a:hover .img-example {
   text-transform: uppercase;
 }
 .footer__newsletter .input-interaction::-webkit-input-placeholder { /* WebKit browsers */
-    color: white;
+  color: white;
 }
 .footer__newsletter .input-interaction:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: white;
+  color: white;
 }
 .footer__newsletter .input-interaction::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: white;
+  color: white;
 }
 .footer__newsletter .input-interaction:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color: white;
+  color: white;
 }
 
 .newsletter-label {
