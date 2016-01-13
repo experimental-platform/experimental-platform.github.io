@@ -111,6 +111,9 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 .creators,
 .creators__profile,
 .outlook,
+.footer,
+.footer__links,
+.footer__link,
 .order-hardware {
   overflow:           hidden;
   box-sizing:         border-box;
@@ -599,5 +602,24 @@ a:hover .profile__portrait {
 
 .newsletter-label {
   padding-right: 12px;
+}
+
+.footer__links {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer__link {
+  display:         inline-block;
+  width:           32%;
+  text-decoration: none;
+  color:           #ddd;
+}
+
+.footer__link a {
+  display:         inline-block;
+  width:           100%;
+  height:          100%;
+  text-decoration: none;
 }
 
