@@ -1,0 +1,34 @@
+<ol class="experimental-platform-setup">
+  <li>
+    <h4>Install Vagrant and VirtualBox</h4>
+    <p class="primary">
+      Vagrant is a VM manager widely used to create ad-hoc environments for testing. If you are not familiar with it please consult the documentation found on the following websites:
+      <ul>
+        <li><a href="https://www.virtualbox.org/" target="_blank">VirtualBox</a></li>
+        <li><a href="https://www.vagrantup.com/" target="_blank">Vagrant</a></li>
+      </ul>
+    </p>
+  </li>
+  <li>
+    <h4>Start the VM</h4>
+    <p class="primary">
+      Platform installation is based on a running CoreOS instance. To simplify local testing we include a primitive Vagrantfile that should get you running in a few minutes.
+    </p>
+    <code>
+$ git clone https://github.com/experimental-platform/platform-configure-script.git
+$ cd platform-configure-script
+$ vagrant up
+    </code>
+  </li>
+  <li>
+    <h4>Install experimental platform</h4>
+    <code>
+$ vagrant ssh -c "curl https://raw.githubusercontent.com/experimental-platform/platform-configure-script/master/platform-configure.sh | sudo CHANNEL=alpha PLATFORM_SYS_GROUP=protonet PLATFORM_INSTALL_OSUPDATE=true PLATFORM_INSTALL_REBOOT=true sh"
+    </code>
+    <p class="primary">
+      This step will install the software and then reboot the system. Depending on the network configuration it might not come up on its own, in that case please start it manually with vagrant up. A few moments later the experimental platform web interface should be available under <a href="http://paleale.local">http://paleale.local</a>.
+    </p>
+  </li>
+</ol>
+
+

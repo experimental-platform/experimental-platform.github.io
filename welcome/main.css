@@ -147,18 +147,18 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 }
 
 .teaser__text {
-  font-size: 1.4em;
+  font-size:   1.4em;
   font-weight: bold;
 }
 
 .description {
   text-align: center;
-  font-size: 1.2em;
+  font-size:  1.2em;
 }
 
 .promise {
-  border: 1px solid #aaa;
-  padding: 12px;
+  border:    1px solid #aaa;
+  padding:   12px;
   font-size: 1.4em;
 }
 
@@ -168,31 +168,28 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
   font-size:   2em;
 }
 
-.experimental-platform-setup {
-  color: pink;
-}
-
 .notify-me,
-.order-hardware {
+.order-hardware,
+.setup-platform {
   text-align: center;
   margin:     2em auto;
   font-size:  1.4em;
 }
 
 .order-hardware .button-interaction {
-  display: block;
-  font-size: .8em;
+  display:        block;
+  font-size:      .8em;
   vertical-align: middle;
 }
 
 .order-hardware__store {
-  display: block;
+  display:   block;
   font-size: .7em;
 }
 
 @media (min-width: 1024px) {
   .order-hardware .button-interaction {
-    width:   32%;
+    width:   28%;
     display: inline-block;
     margin:  3px;
   }
@@ -495,3 +492,8 @@ a:hover .img-example {
 .dockerfile figure {
   animation-delay: 3s;
 }
+
+.modal {
+  width: 50%;
+}
+

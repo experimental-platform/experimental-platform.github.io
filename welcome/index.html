@@ -35,28 +35,14 @@
 
     <div class="tutorial section-content">
       <p>
-        Here is our example project: Connect a CO2 Sensor to this Smartlight.<br>
-        Control the Lightbulb depending on the CO2 levels.
+        Here is our example project: Connect a CO₂ Sensor to this Smartlight.<br>
+        Control the Lightbulb depending on the CO₂ levels.
       </p>
       <p>
         If you aren't already running the experimental platform, you will need to set it up. Luckily this is very easy:
       </p>
+      <div class="setup-platform"><a class="button-interaction" href="setup.html" rel="modal:open">Setup experimental platform</a></div>
       <p>Installing platform and creating your first app only takes a couple of minutes.<br>Your app will instantly be available on the internet while it's still hosted on your local machine.</p>
-      [popup to setup script]
-      <ol class="experimental-platform-setup">
-        <li>
-          <p class="primary">Follow <a href="https://coreos.com/os/docs/latest/installing-to-disk.html" target="_blank">these instructions</a> to install CoreOS Linux on your local hardware.</p>
-          <p class="secondary">Read our <a target="_blank" href="https://github.com/experimental-platform/platform-configure-script#requirements">hardware requirements</a> first. Alternatively you can install it in a <a href="https://github.com/experimental-platform/platform-configure-script#install-in-local-vm" target="_blank">local VM</a> or simply <a href="order.html" rel="modal:open">order</a> pre-installed hardware from us.</p>
-        </li>
-        <li>
-          <p class="primary">Install Experimental Platform by executing this one-liner on the hardware:</p>
-          <pre><code>curl https://raw.githubusercontent.com/experimental-platform/platform-configure-script/master/platform-configure.sh | sudo PLATFORM_INSTALL_OSUPDATE=true PLATFORM_INSTALL_REBOOT=true PLATFORM_SYS_GROUP=protonet sh</code></pre>
-        </li>
-        <li>
-          <p class="primary">Open <code>http://paleale.local/</code> (or the corresponding IP) in your browser and setup Experimental Platform.</p>
-          <p class="secondary">You will be asked for a name, password and your public ssh key.</p>
-        </li>
-      </ol>
 
       <ol class="installation-steps">
         <li>
@@ -73,7 +59,7 @@ git push platform master</code>
 
       <div class="order-hardware">
         <p class="order-hardware__note">If you like to try the example on real hardware, you can for example order the modules via the links below.</p>
-        <a class="button-interaction" href="http://www.co2meter.com/collections/co2-sensors/products/s8-miniature-co2-sensor" target="_blank">Order the CO2 Sensor
+        <a class="button-interaction" href="http://www.co2meter.com/collections/co2-sensors/products/s8-miniature-co2-sensor" target="_blank">Order the CO₂ Sensor
           <span class="order-hardware__store">co2meter.com</span>
         </a>
         <a class="button-interaction" href="http://www.amazon.com/dp/B014H2P4KW/ref=sr_ph?ie=UTF8&amp;qid=1452304434&amp;sr=1&amp;keywords=philips+hue+ambiance+white+and+color" target="_blank">Order the Smartlight
