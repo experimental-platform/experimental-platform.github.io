@@ -606,14 +606,28 @@ a:hover .profile__portrait {
 
 .footer__links {
   list-style-type: none;
-  padding-left: 0;
+  padding-left:    0;
+  color:           #ddd;
+  vertical-align: middle;
+}
+
+.footer__newsletter form {
+  display: inline-block;
 }
 
 .footer__link {
-  display:         inline-block;
-  width:           32%;
-  text-decoration: none;
-  color:           #ddd;
+  display: inline-block;
+  padding-right: 12px;
+  vertical-align: middle;
+}
+
+.footer__share {
+  display: inline-block;
+  float:right;
+}
+
+.footer__links .footer__link {
+  width: 32%;
 }
 
 .footer__link a {

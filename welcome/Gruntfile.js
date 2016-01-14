@@ -45,6 +45,6 @@ module.exports = function (grunt) {
   grunt.registerTask('run', ['connect', 'watch']);
   grunt.registerTask('buildcss', ['cssmin']);
   grunt.registerTask('buildjs', ['uglify']);
-  grunt.registerTask('default', ['cssmin']);
+  grunt.registerTask('default', ['buildjs', 'cssmin']);
 };
 
