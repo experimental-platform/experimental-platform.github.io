@@ -201,45 +201,41 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 
 .showcase {
   border:    1px solid #aaa;
-  padding:   12px;
+  padding:   24px 12px;
   margin:    6px 0;
   font-size: 1.2em;
+  position: relative;
 }
 
 .showcase__note {
   font-size: .7em;
+  margin-top: 12px;
 }
 
-.showcase__product {
-  display:        inline-block;
-  vertical-align: middle;
+.watchdog:after {
+  background: url(img/watchdog.png) no-repeat right center;
 }
 
-.watchdog:before {
-  background: url(img/watchdog.png) no-repeat center center;
+.office-air-quality-system:after {
+  background: url(img/office-air-quality-system.png) no-repeat right center;
 }
 
-.office-air-quality-system:before {
-  background: url(img/office-air-quality-system.png) no-repeat center center;
+.cooking-timer:after {
+  background: url(img/cooking-timer.png) no-repeat right center;
 }
 
-.cooking-timer:before {
-  background: url(img/cooking-timer.png) no-repeat center center;
-}
-
-.watchdog:before,
-.office-air-quality-system:before,
-.cooking-timer:before {
+.watchdog:after,
+.office-air-quality-system:after,
+.cooking-timer:after {
   content:         '';
   background-size: 100%;
   display:         inline-block;
   width:           200px;
   height:          50px;
   vertical-align:  middle;
-}
-
-.showcase__module {
-  vertical-align:  middle;
+  position: absolute;
+  right: 0;
+  top: 12px;
 }
 
 .showcase__formula {
