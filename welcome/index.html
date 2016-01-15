@@ -20,60 +20,55 @@
     <div class="teaser">
       <div class="teaser__content">
         <h1 class="teaser__header logo" title="Build great IoT applications with web technologies">Experimental Platform</h1>
-        <h3 class="teaser__text">the easiest way to <br>connect smart devices</h3>
+        <h3 class="teaser__text">the easiest way to<br> develop for smart devices</h3>
       </div>
       <div class="teaser__animation"></div>
     </div><!-- /.teaser -->
 
     <p class="description section-content">
-      Experimental Platform provides an easy way to deploy apps on local hardware without the hassle to setup the environment. It enables developers and makers to focus on the things that matter.
+      Working on IoT projects shouldn't mean spending hours trying to find your devices, getting them to connect and figure out their APIs - So we created a deveopment platform that connects all of your smart devices and allows you to program them using your favorite language.
     </p>
 
-    <div class="promise section-content">
-      <h2 class="promise__header">Our 5 Minute Promise</h2>
-      <p class="promise__text">
-        With Experimental Platform you'll be able to build your first hardware integration in under 5 minutes - using standard web technologies.
-      </p>
-    </div>
+    <ul class="showcases section-content">
+      <li class="showcases__header">Some things you can do with it</li>
+      <li class="showcase">
+        <div class="showcase__formula">Smartlight + CO₂ = Office Air Quality System</div>
+        <div class="showcase__note">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      </li>
+      <li class="showcase">
+        <div class="showcase__formula">Jasper Voice Recognition + Speakers = Voice Based Cooking Timer</div>
+        <div class="showcase__note">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      </li>
+      <li class="showcase">
+        <div class="showcase__formula">Smartlock + Webcam = Smart Watchdog</div>
+        <div class="showcase__note">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      </li>
+    </ul><!-- ./showcases -->
 
     <div class="tutorial section-content">
-      <img class="tutorial__banner" src="img/fiveminutepromise.png" alt="our 5 minute promise">
+      <h2 class="headline-content"><span>Let's start</span></h2>
+      <div class="showcase">
+        <div class="showcase__formula">Smartlight + CO₂ = Office Air Quality System</div>
+        <div class="showcase__note">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      </div>
       <p class="tutorial__description">
-        Here is our example project: Connect a CO₂ Sensor to this Smartlight.<br>
-        Control the Lightbulb depending on the CO₂ levels.
+        Here is our example project: Connect a CO₂ Sensor to a Smartlight and create an <strong>Office Air Quality System</strong>.
       </p>
       <p class="tutorial__description">
         If you aren't already running the experimental platform, you will need to set it up. Luckily this is very easy:
       </p>
       <div class="setup-platform"><a class="button-interaction" href="setup.html" rel="modal:open">Setup experimental platform</a></div>
-      <p>Installing platform and creating your first app only takes a couple of minutes.<br>Your app will instantly be available on the internet while it's still hosted on your local machine.</p>
 
+      <div class="tutorial__banner section-content"><img src="img/co2demo.gif" alt="co2demo" class="tutorial__screenshot"></div>
       <ol class="tutorial__steps">
         <li>
-          <h4 class="primary">Connect to the CO₂ Sensor</h4>
+          <h4 class="primary">Connect the hardware and find it in the Device Manager</h4>
           <p class="primary">
-            Connecting to the CO₂ Seonsor is very easy. You can read out the CO₂ levels via a simple HTTP request:
-          </p>
-          <code>GET host:3200/devices/:sensorname</code>
-          <p class="secondary">
-            Replace the host with the address of the machine the experimental platform is running on.
+            Don't worry if you don't have the hardware ready yet, we can skip this step for now and use virtual devices in this example.
           </p>
         </li>
         <li>
-          <h4>Connect to the Philips Hue</h4>
-          <p class="primary">
-            Controlling the Philips Hue lightbulb couldn't be easier, just use an http request to control the lightbulb:
-          </p>
-          <code>PUT: hue.local/api/:token/lights/:lights_id/state</code>
-        </li>
-        <li>
-          <h4>See it in action</h4>
-          <p class="primary">
-            We prepared an example app to demonstrate all the different parts acting together to create an actually useful app: Change the color of the lightbulb depending on the CO₂ levels. <a href="https://github.com/experimental-platform/example-co2-to-hue">Check it out on github </a>.
-          </p>
-          <div>
-            <img src="img/co2demo.gif" alt="co2demo" class="tutorial__screenshot">
-          </div>
+          <h4 class="primary">Clone the example from <a href="https://github.com/experimental-platform/example-co2-to-hue">github.com</a>.</h4>
           <code>git clone https://github.com/experimental-platform/example-co2-to-hue.git && cd example-co2-to-hue</code>
         </li>
         <li>
@@ -84,11 +79,22 @@ git push platform master</code>
         </li>
         <li>
           <h4>That's it! Your app is now available on the internet and within your local network.</h4>
-          <p class="primary">Locally via <code>http://your-name.local/example-co2-to-hue/</code> and remotely via <code>https://your-name.protonet.info/example-co2-to-hue/</code></p>
+          <p>Locally via</p>
+          <div class="access-locally">
+            <span class="access-locally__illustration"></span>
+            <code class="access__url inline-code">http://your-name.local/example-co2-to-hue/</code>
+          </div>
+
+          <p>and remotely via</p>
+          <div class="access-globally">
+            <span class="access-locally__illustration"></span>
+            <code class="access__url inline-code">https://your-name.protonet.info/example-co2-to-hue/</code>
+          </div>
         </li>
       </ol><!-- /.tutorial__steps -->
 
       <div class="order-hardware">
+        <h2 class="headline-content"><span>Turn it into the real thing</span></h2>
         <img class="order-hardware__illustration" src="img/order-hardware.jpg" alt="order hardware">
         <p class="order-hardware__note">If you like to try the example on real hardware, you can for example order the modules via the links below.</p>
         <a class="button-interaction" href="http://www.co2meter.com/collections/co2-sensors/products/s8-miniature-co2-sensor" target="_blank">Order the CO₂ Sensor
@@ -129,7 +135,7 @@ git push platform master</code>
     </div><!-- /.share -->
 
     <div class="outlooks section-content">
-      <h2 class="headline-content"><span>Outlook</span></h2>
+      <h2 class="headline-content"><span>Features</span></h2>
       <ol class="outlook-features">
         <li class="outlook">
           <h3 class="headline-content"><span>REST API</span></h3>

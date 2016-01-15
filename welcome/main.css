@@ -114,6 +114,8 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 .footer,
 .footer__links,
 .footer__link,
+.access-locally__illustration,
+.access__url,
 .order-hardware {
   overflow:           hidden;
   box-sizing:         border-box;
@@ -176,20 +178,26 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
   font-size:  1.2em;
 }
 
-.promise {
+.showcases {
   border:    1px solid #aaa;
   padding:   12px;
-  font-size: 1.4em;
 }
 
-.promise__header {
+.showcases__header {
   font-weight: normal;
   text-align:  center;
   font-size:   2em;
 }
 
-.promise__text {
-  text-align: center;
+.showcase {
+  border:    1px solid #aaa;
+  padding:   12px;
+  margin:    6px 0;
+  font-size: 1.2em;
+}
+
+.showcase__note {
+  font-size: .7em;
 }
 
 .notify-me,
@@ -531,9 +539,29 @@ a:hover .profile__portrait {
 }
 
 .order-hardware__illustration,
-.tutorial__screenshot,
-.tutorial__banner {
+.tutorial__screenshot {
   width: 100%;
+}
+
+.tutorial__banner {
+  margin: 0;
+}
+
+.access-locally__illustration {
+  display:        inline-block;
+  width:          100px;
+  height: 50px;
+  vertical-align: middle;
+  background: url(img/cloud_url.jpg) no-repeat left center;
+  background-size: 100%;
+  margin-right:   -10px;
+  width: 20%;
+}
+
+.access__url {
+  width:          75%;
+  vertical-align: middle;
+  display:        inline-block;
 }
 
 .credits__protonet {
