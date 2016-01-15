@@ -212,7 +212,6 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 
 .showcase__product {
   display:        inline-block;
-  width:          50%;
   vertical-align: middle;
 }
 
@@ -234,44 +233,16 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
   content:         '';
   background-size: 100%;
   display:         inline-block;
-  width:           130px;
-  height:          32px;
-  vertical-align:  middle;
-}
-
-.showcase__module.smartlight:before {
-  background: url(img/showcase-smartlight.png) no-repeat center center/70%;
-}
-
-.showcase__module.co2sensor:before {
-  background: url(img/co2sensor.png) no-repeat center center/100%;
-}
-
-.showcase__module.voice-recognition:before {
-  background: url(img/showcase-voice-recognition.png) no-repeat center center/100%;
-}
-
-.showcase__module.speakers:before {
-  background: url(img/showcase-speakers.png) no-repeat center center/100%;
-}
-
-.showcase__module.smartlock:before {
-  background: url(img/showcase-smartlock.png) no-repeat center center/100%;
-}
-
-.showcase__module.webcam:before {
-  background: url(img/showcase-webcam.png) no-repeat center center/100%;
-}
-
-.showcase__module:before {
-  content:         '';
-  display:         inline-block;
-  width:           32px;
-  height:          32px;
+  width:           200px;
+  height:          50px;
   vertical-align:  middle;
 }
 
 .showcase__module {
+  vertical-align:  middle;
+}
+
+.showcase__formula {
   vertical-align:  middle;
 }
 
