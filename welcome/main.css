@@ -673,9 +673,9 @@ a:hover .profile__portrait {
 
 .platform__device-manager,
 .platform__description {
-  display: inline-block;
-  width: 50%;
-  margin-right: -8px;
+  display:        inline-block;
+  width:          50%;
+  margin-right:   -8px;
   vertical-align: top;
 }
 
