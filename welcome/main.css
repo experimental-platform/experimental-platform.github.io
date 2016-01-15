@@ -62,6 +62,10 @@ code {
   -webkit-box-sizing: border-box;
 }
 
+.popup-content {
+  display: none;
+}
+
 .linked-content {
   text-decoration: underline;
 }
