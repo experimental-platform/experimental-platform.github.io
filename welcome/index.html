@@ -32,15 +32,15 @@
     <ul class="showcases section-content">
       <li class="showcases__header">Some things you can do with it</li>
       <li class="showcase">
-        <div class="showcase__formula">Office Air Quality System = Smartlight + CO₂ Sensor</div>
+        <div class="showcase__formula"><span class="showcase__product office-air-quality-system">Office Air Quality System</span> = Smartlight + CO₂ Sensor</div>
         <div class="showcase__note">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
       </li>
       <li class="showcase">
-        <div class="showcase__formula">Voice Based Cooking Timer = Jasper Voice Recognition + Speakers</div>
+        <div class="showcase__formula"><span class="showcase__product cooking-timer">Voice Based Cooking Timer</span> = Jasper Voice Recognition + Speakers</div>
         <div class="showcase__note">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
       </li>
       <li class="showcase">
-        <div class="showcase__formula">Smart Watchdog = Smartlock + Webcam</div>
+        <div class="showcase__formula"><span class="showcase__product watchdog"> Smart Watchdog</span> = Smartlock + Webcam</div>
         <div class="showcase__note">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
       </li>
     </ul><!-- ./showcases -->
@@ -66,7 +66,7 @@
         <li>
           <h4>Connect the hardware and find them in the Device Manager</h4>
           <p class="primary">
-            Once you have activated the sensor and smartlight, they will show up in the <strong class="linked-content">Device Manager</strong>.
+            Once you have activated the sensor and smartlight, they will show up in the <a href="#device-manager-popup" rel="modal:open">Device Manager</a>.
           </p>
           <p class="secondary">
             Don't worry if you don't have the hardware ready yet, we can skip this step for now and use virtual devices in this example.
@@ -81,7 +81,7 @@
           <p class="primary">Now deploy the app to the platform:</p>
           <code>git remote add platform ssh://dokku@your-box.local:8022/example-co2-to-hue
 git push platform master</code>
-          <p>You can find your freshly deployed app under <strong class="linked-content">My Apps</strong>.</p>
+          <p>You can find your freshly deployed app under <a href="#app-manager-popup" rel="modal:open">My Apps</a>.</p>
         </li>
         <li>
           <h4>That's it! Your app is now available on the internet and within your local network.</h4>
@@ -93,7 +93,7 @@ git push platform master</code>
 
           <p>and remotely via</p>
           <div class="access-globally">
-            <span class="access-locally__illustration"></span>
+            <span class="access-globally__illustration"></span>
             <code class="access__url inline-code">https://your-name.protonet.info/example-co2-to-hue/</code>
           </div>
         </li>
@@ -377,6 +377,11 @@ git push platform master</code>
     </div>
 
     <a href="https://github.com/experimental-platform/experimental-platform" target="_blank"><img class="github-banner" src="img/fork_me_on_github.png" alt="Fork Experimental Platform on GitHub"></a>
+
+    <div class="popup-content">
+      <div class="device-manager-popup"><img src="img/alpha_hardware.png" alt="device manager" id="device-manager-popup"></div>
+      <div class="app-manager-popup"><img src="img/alpha_hardware.png" alt="device manager" id="app-manager-popup"></div>
+    </div>
 
     <script src="experimental.platform.min.js"></script>
 

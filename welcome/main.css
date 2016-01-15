@@ -206,6 +206,35 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
   font-size: .7em;
 }
 
+.showcase__product {
+  display:        inline-block;
+  width:          50%;
+  vertical-align: middle;
+}
+
+.watchdog:before {
+  background: url(img/watchdog.png) no-repeat center center;
+}
+
+.office-air-quality-system:before {
+  background: url(img/office-air-quality-system.png) no-repeat center center;
+}
+
+.cooking-timer:before {
+  background: url(img/cooking-timer.png) no-repeat center center;
+}
+
+.watchdog:before,
+.office-air-quality-system:before,
+.cooking-timer:before {
+  content:         '';
+  background-size: 100%;
+  display:         inline-block;
+  width:           130px;
+  height:          32px;
+  vertical-align:  middle;
+}
+
 .notify-me,
 .order-hardware,
 .setup-platform {
@@ -548,15 +577,24 @@ a:hover .profile__portrait {
   margin: 0;
 }
 
-.access-locally__illustration {
+.access-locally__illustration,
+.access-globally__illustration {
   display:        inline-block;
   width:          100px;
-  height: 50px;
+  height:         50px;
   vertical-align: middle;
-  background: url(img/cloud_url.jpg) no-repeat left center;
-  background-size: 100%;
   margin-right:   -10px;
-  width: 20%;
+  width:          20%;
+}
+
+.access-locally__illustration {
+  background:      url(img/hexagon-.png) no-repeat right center;
+  background-size: 50%;
+}
+
+.access-globally__illustration {
+  background:      url(img/hexagon-cloud-.png) no-repeat right center;
+  background-size: 80%;
 }
 
 .access__url {
