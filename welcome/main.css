@@ -111,6 +111,8 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 .creators,
 .creators__profile,
 .outlook,
+.platform__device-manager,
+.platform__description,
 .footer,
 .footer__links,
 .footer__link,
@@ -663,5 +665,21 @@ a:hover .profile__portrait {
   width:           100%;
   height:          100%;
   text-decoration: none;
+}
+
+.experimental-platform {
+  margin: 12px 0;
+}
+
+.platform__device-manager,
+.platform__description {
+  display: inline-block;
+  width: 50%;
+  margin-right: -8px;
+  vertical-align: top;
+}
+
+.platform__description {
+  font-size: 1.2em;
 }
 
