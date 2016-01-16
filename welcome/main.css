@@ -250,6 +250,19 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
   font-size:  1.2em;
 }
 
+.share-targets {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.share-github,
+.share-twitter {
+  display:        inline-block;
+  width:          20%;
+  vertical-align: middle;
+}
+
 .order-hardware .button-interaction {
   display:        block;
   vertical-align: middle;
@@ -703,7 +716,7 @@ a:hover .profile__portrait {
 
 .footer__share {
   display: inline-block;
-  float:right;
+  float:   right;
 }
 
 .footer__links .footer__link {
