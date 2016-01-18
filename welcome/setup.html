@@ -2,6 +2,7 @@
   <li>
     <h4>Install Vagrant and VirtualBox</h4>
     <p class="primary">
+      We're using Vagrant for this tutorial, usually you'd use dedicated hardware.
       Vagrant is a VM manager widely used to create ad-hoc environments for testing. If you are not familiar with it please consult the documentation found on the following websites:
       <ul>
         <li><a href="https://www.virtualbox.org/" target="_blank">VirtualBox</a></li>
@@ -26,7 +27,20 @@ $ vagrant up
 $ vagrant ssh -c "curl https://raw.githubusercontent.com/experimental-platform/platform-configure-script/master/platform-configure.sh | sudo CHANNEL=alpha PLATFORM_SYS_GROUP=protonet PLATFORM_INSTALL_OSUPDATE=true PLATFORM_INSTALL_REBOOT=true sh"
     </code>
     <p class="primary">
-      This step will install the software and then reboot the system. Depending on the network configuration it might not come up on its own, in that case please start it manually with vagrant up. A few moments later the experimental platform web interface should be available under <a href="http://paleale.local">http://paleale.local</a>.
+      This step will install the software and then reboot the system. Once it's finished it will output the local adress under which your experimental platform will be reachable.
+    </p>
+    <code>
+====================================================================
+After the reboot your experimental platform will be reachable via:
+http://zbixmx.local
+(don't worry, you can change this later)
+====================================================================
+    </code>
+    <p class="prmary">
+    Depending on the network configuration it might not come up on its own, in that case please start it manually with vagrant up. A few moments later the experimental platform web interface should be available. After the system is up and running, open it in your browser and finish the setup wizard so you'll be able to deploy your first application.
+    </p>
+    <p class="prmary">
+    After the system is up and running, fire it up in your browser and finish the setup wizard so you'll be able to deploy your first application.
     </p>
   </li>
 </ol>
