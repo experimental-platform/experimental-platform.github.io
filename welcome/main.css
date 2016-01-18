@@ -186,6 +186,7 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 .description {
   margin: 24px auto;
   font-size: 1.4em;
+  padding: 0 12px;
 }
 
 .showcases {
