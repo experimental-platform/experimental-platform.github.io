@@ -266,6 +266,16 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
   margin-right:   -8px;
 }
 
+.share__links {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.share__link {
+  display: inline-block;
+}
+
 .order-hardware .button-interaction {
   display:        block;
   vertical-align: middle;
