@@ -529,7 +529,7 @@ a:hover .profile__portrait {
   height: 60px;
 }
 
-.supported-technologies figure {
+.supported-technologies .supported-technologies__illustration {
   margin:         0;
   padding:        0 16px;
   opacity:        0.8;
@@ -538,52 +538,52 @@ a:hover .profile__portrait {
   transition:     opacity 0.2s, filter 0.2s, -webkit-filter 0.2s;
 }
 
-.supported-technologies figcaption {
+.supported-technologies .supported-technologies__caption {
   font-size: 14px;
   color:     #000;
   opacity:   0;
 }
 
-.supported-technologies li:hover figcaption {
+.supported-technologies li:hover .supported-technologies__caption {
   opacity: 1;
 }
 
-.supported-technologies li:hover figure {
+.supported-technologies li:hover .supported-technologies__illustration {
   opacity: 1;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
 
-.nodejs figure,
-.rails figure,
-.golang figure,
-.php figure,
-.python figure,
-.dockerfile figure {
+.nodejs .supported-technologies__illustration,
+.rails .supported-technologies__illustration,
+.golang .supported-technologies__illustration,
+.php .supported-technologies__illustration,
+.python .supported-technologies__illustration,
+.dockerfile .supported-technologies__illustration {
   animation: fade 0.8s;
 }
 
-.nodejs figure {
+.nodejs .supported-technologies__illustration {
   animation-delay: 2s;
 }
 
-.rails figure {
+.rails .supported-technologies__illustration {
   animation-delay: 2.2s;
 }
 
-.golang figure {
+.golang .supported-technologies__illustration {
   animation-delay: 2.4s;
 }
 
-.php figure {
+.php .supported-technologies__illustration {
   animation-delay: 2.6s;
 }
 
-.python figure {
+.python .supported-technologies__illustration {
   animation-delay: 2.8s;
 }
 
-.dockerfile figure {
+.dockerfile .supported-technologies__illustration {
   animation-delay: 3s;
 }
 
