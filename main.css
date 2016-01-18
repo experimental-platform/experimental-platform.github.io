@@ -500,12 +500,14 @@ a:hover .profile__portrait {
   padding:         0;
 }
 
-.outlook {
-  width:          50%;
-  display:        inline-block;
-  margin-right:   -8px;
-  vertical-align: top;
-  padding:        12px 24px;
+@media (min-width: 1024px) {
+  .outlook {
+    width:          50%;
+    display:        inline-block;
+    margin-right:   -8px;
+    vertical-align: top;
+    padding:        12px 24px;
+  }
 }
 
 .outlook .headline-content {
