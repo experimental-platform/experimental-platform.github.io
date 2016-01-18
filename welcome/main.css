@@ -170,7 +170,7 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 }
 
 .teaser__content {
-  z-index: 2;
+  z-index:  2;
   position: relative;
 }
 
@@ -185,14 +185,14 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 }
 
 .description {
-  margin: 24px auto;
+  margin:    24px auto;
   font-size: 1.4em;
-  padding: 0 12px;
+  padding:   0 12px;
 }
 
 .showcases {
-  border:    1px solid #aaa;
-  padding:   12px;
+  border:  1px solid #aaa;
+  padding: 12px;
 }
 
 .showcases__header {
@@ -206,7 +206,7 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
   padding:   24px 12px;
   margin:    6px 0;
   font-size: 1.4em;
-  position: relative;
+  position:  relative;
 }
 
 .showcase__note {
@@ -235,9 +235,9 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
   width:           200px;
   height:          50px;
   vertical-align:  middle;
-  position: absolute;
-  right: 0;
-  top: 12px;
+  position:        absolute;
+  right:           0;
+  top:             12px;
 }
 
 .showcase__formula {
