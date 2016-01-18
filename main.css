@@ -154,7 +154,21 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
   background-size:   cover;
   background-repeat: no-repeat;
   width:             100%;
-  padding:           3em;
+}
+
+.teaser__text {
+  font-size:   1em;
+  font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+  .teaser {
+    padding: 3em;
+  }
+
+  .teaser__text {
+    font-size: 1.4em;
+  }
 }
 
 .teaser__animation {
@@ -177,11 +191,6 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 .teaser__header {
   font-size:   1em;
   font-weight: normal;
-}
-
-.teaser__text {
-  font-size:   1.4em;
-  font-weight: bold;
 }
 
 .description {
