@@ -171,6 +171,7 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 
 .teaser__content {
   z-index: 2;
+  position: relative;
 }
 
 .teaser__header {
