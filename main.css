@@ -258,12 +258,8 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
   text-align:      center;
 }
 
-.share-github,
 .share-twitter {
-  display:        inline-block;
-  width:          25%;
-  vertical-align: middle;
-  margin-right:   -8px;
+  display: block;
 }
 
 .share__links {
@@ -274,6 +270,11 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 
 .share__link {
   display: inline-block;
+}
+
+.share__description,
+.technology__description {
+  font-size: 1.2em;
 }
 
 .order-hardware .button-interaction {
@@ -709,6 +710,21 @@ a:hover .profile__portrait {
   text-align: center;
 }
 
+@media (min-width: 1024px) {
+  .newsletter__signup {
+    display: inline;
+  }
+
+  .footer__share {
+    display: inline-block;
+    float:   right;
+  }
+}
+
+.footer__share {
+  padding-left: 0;
+}
+
 .footer__links {
   list-style-type: none;
   padding-left:    0;
@@ -724,11 +740,6 @@ a:hover .profile__portrait {
   display:        inline-block;
   padding-right:  12px;
   vertical-align: middle;
-}
-
-.footer__share {
-  display: inline-block;
-  float:   right;
 }
 
 .footer__links .footer__link {

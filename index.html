@@ -111,7 +111,7 @@ git push platform master</code>
       <div class="order-hardware">
         <h2 class="headline-content"><span>Turn it into the real thing</span></h2>
         <img class="order-hardware__illustration" src="img/order-hardware.jpg" alt="order hardware">
-        <p class="order-hardware__note">If you'd like to try the example on real hardware order the modules via the links below.</p>
+        <p>If you'd like to try the example on real hardware order the modules via the links below.</p>
         <a class="button-interaction" href="http://www.co2meter.com/collections/co2-sensors/products/s8-miniature-co2-sensor" target="_blank">Order the CO₂ Sensor
           <span class="order-hardware__store">co2meter.com</span>
         </a>
@@ -121,7 +121,7 @@ git push platform master</code>
         <a class="button-interaction" href="http://www.newegg.com/Product/Product.aspx?Item=N82E16856501013" target="_blank">Order the Mini PC
           <span class="order-hardware__store">newegg.com</span>
         </a>
-        <p class="order-hardware__note">
+        <p>
           For more information on how to setup the CO₂ Sensor check out this <a href="http://experimental-platform.tumblr.com/private/137559322715/tumblr_o15prdeSZ11ucy30s" target="_blank">little tutorial</a>.
         </p>
       </div>
@@ -129,19 +129,17 @@ git push platform master</code>
 
     <div class="share section-content">
       <h2 class="headline-content"><span>Spread the word</span></h2>
-      <p>
+      <p class="share__description">
         Like where this is heading? Follow us and star us on <a href="https://github.com/experimental-platform/experimental-platform" target="_blank">github</a>, you'll help us spread the word to make this even more useful!
       </p>
       <ul class="share-targets">
-        <li>
-        </li>
         <li class="share-twitter">
           <a href="https://twitter.com/exp_platform" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @exp_platform</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         </li>
       </ul>
 
-      <p>
+      <p class="share__description">
         If you've built a cool integration make sure you drop us a line at experimental-platform [át] protonet.info so we can include it in our example library (and yes - pull requests work too!). For more infos, feel free to visit us in our Mountain View (CA) or Hamburg (Germany) office, invite us to a user group or just hit the links below:
       </p>
 
@@ -225,10 +223,10 @@ git push platform master</code>
         </ul>
       </div><!-- /.supported-technologies -->
 
-      <p>
+      <p class="technology__description">
         Use any language you like. Anything that works with heroku buildpacks can be used with the experimental platform. And since the interface to the hardware is via http connecting to it should work in any common language.
       </p>
-      <p>
+      <p class="technology__description">
         This project wouldn't be possible without the extensive use of other great open source technologies: Docker, Dokku, Node.js, Go and so many more. The code is open source under Apache 2.0. Feel free to build, fork and share.
       </p>
       <p>
@@ -371,8 +369,10 @@ git push platform master</code>
         <div class="footer__newsletter">
           <form action="https://github.us4.list-manage.com/subscribe/post?u=c9e8e52c812dee7bfd031a95c&amp;id=c600c5c03d" method="post" class="modal-form">
             <label class="newsletter-label">Newsletter</label>
-            <input type="email" name="EMAIL" placeholder="Enter email address" required class="input-interaction">
-            <input type="submit" value="Subscribe" name="subscribe" class="button-interaction">
+            <div class="newsletter__signup">
+              <input type="email" name="EMAIL" placeholder="Enter email address" required class="input-interaction">
+              <input type="submit" value="Subscribe" name="subscribe" class="button-interaction">
+            </div>
             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c9e8e52c812dee7bfd031a95c_c600c5c03d" tabindex="-1" value=""></div>
           </form>
 
