@@ -223,16 +223,18 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
   margin-top: 12px;
 }
 
-.watchdog:after {
-  background: url(img/watchdog.png) no-repeat right center;
-}
+@media (min-width: 1024px) {
+  .watchdog:after {
+    background: url(img/watchdog.png) no-repeat right center;
+  }
 
-.office-air-quality-system:after {
-  background: url(img/office-air-quality-system.png) no-repeat right center;
-}
+  .office-air-quality-system:after {
+    background: url(img/office-air-quality-system.png) no-repeat right center;
+  }
 
-.cooking-timer:after {
-  background: url(img/cooking-timer.png) no-repeat right center;
+  .cooking-timer:after {
+    background: url(img/cooking-timer.png) no-repeat right center;
+  }
 }
 
 .watchdog:after,
