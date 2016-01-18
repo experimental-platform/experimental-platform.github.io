@@ -184,8 +184,8 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 }
 
 .description {
-  text-align: center;
-  font-size:  1.4em;
+  margin: 24px auto;
+  font-size: 1.4em;
 }
 
 .showcases {
@@ -645,7 +645,6 @@ a:hover .profile__portrait {
 
 .footer {
   text-transform: uppercase;
-  font-size: 1em;
 }
 
 .footer-container {
@@ -710,8 +709,8 @@ a:hover .profile__portrait {
 }
 
 .footer__link {
-  display: inline-block;
-  padding-right: 12px;
+  display:        inline-block;
+  padding-right:  12px;
   vertical-align: middle;
 }
 

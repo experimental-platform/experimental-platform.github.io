@@ -26,7 +26,9 @@
     </div><!-- /.teaser -->
 
     <p class="description section-content">
-      Working on IoT projects shouldn't mean spending hours trying to find your devices, getting them to connect and figure out their APIs - so we're creating a development platform that connects all of your smart devices and allows you to program them using your favorite language. In the cloud or your local hardware.
+      For us, working on sensor and IoT projects always ment spending hours on end trying to fiddle around with environments, obscure device APIs and figuring out how to access them remotely with languages and frameworks we didn't know.
+    </p>
+    <p class="description section-content">So we decided to build an open development platform that makes the whole experience fun. It uses standard web technologies like CoreOS and Docker and runs on your local machine.<br> Here is the Experimental Platform:
     </p>
 
     <ul class="showcases section-content">
@@ -90,13 +92,13 @@
         </li>
         <li>
           <h4>Deploy it</h4>
-          <p class="primary">Now deploy the app to the platform:</p>
+          <p class="primary">Now deploy the app to the platform (e.g. your VM or a local machine):</p>
           <code>git remote add platform ssh://dokku@your-box.local:8022/example-co2-to-hue
 git push platform master</code>
           <p>You can find your freshly deployed app under <a href="#app-manager-popup" rel="modal:open">My Apps</a>.</p>
         </li>
         <li>
-          <h4>That's it! Your app is now available on the internet and within your local network.</h4>
+          <h4>That's it! Your app is now available within your local network and on the internet.</h4>
           <p>Locally via</p>
           <div class="access-locally">
             <span class="access-locally__illustration"></span>
@@ -108,6 +110,9 @@ git push platform master</code>
             <span class="access-globally__illustration"></span>
             <code class="access__url inline-code">https://your-name.protonet.info/example-co2-to-hue/</code>
           </div>
+          <p>
+            And most important of all: it's not just super simple but the logic and your data stays fully under your control!
+          </p>
         </li>
       </ol><!-- /.tutorial__steps -->
 
