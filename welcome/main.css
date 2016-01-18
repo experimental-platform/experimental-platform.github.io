@@ -185,7 +185,7 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 
 .description {
   text-align: center;
-  font-size:  1.2em;
+  font-size:  1.4em;
 }
 
 .showcases {
@@ -203,7 +203,7 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
   border:    1px solid #aaa;
   padding:   24px 12px;
   margin:    6px 0;
-  font-size: 1.2em;
+  font-size: 1.4em;
   position: relative;
 }
 
@@ -283,7 +283,7 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 }
 
 .order-hardware__note {
-  font-size: 0.8em;
+  font-size: .7em;
 }
 
 .creators {
@@ -496,7 +496,7 @@ a:hover .profile__portrait {
 }
 
 .outlook .headline-content {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .outlook-banner {
@@ -645,7 +645,7 @@ a:hover .profile__portrait {
 
 .footer {
   text-transform: uppercase;
-  font-size: .9em;
+  font-size: 1em;
 }
 
 .footer-container {
@@ -689,8 +689,8 @@ a:hover .profile__portrait {
 }
 
 .newsletter-label {
-  padding-right: 12px;
-  font-size: 1.6em;
+  padding-right:  12px;
+  font-size:      1.4em;
   vertical-align: middle;
 }
 
@@ -744,6 +744,6 @@ a:hover .profile__portrait {
 }
 
 .platform__description {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
