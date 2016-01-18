@@ -268,8 +268,8 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 
 .share__links {
   list-style-type: none;
-  padding-left: 0;
-  text-align: center;
+  padding-left:    0;
+  text-align:      center;
 }
 
 .share__link {
