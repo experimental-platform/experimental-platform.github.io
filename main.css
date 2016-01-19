@@ -611,7 +611,13 @@ a:hover .profile__portrait {
 }
 
 .modal {
-  width: 50%;
+  width: 80%;
+}
+
+@media (min-width: 1024px) {
+  .modal {
+    width: 50%;
+  }
 }
 
 .order-hardware__illustration,
