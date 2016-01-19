@@ -134,8 +134,7 @@ git push platform master</code>
       </p>
       <ul class="share-targets">
         <li class="share-twitter">
-          <a href="https://twitter.com/exp_platform" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @exp_platform</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          <a href="https://twitter.com/exp_platform" class="twitter-follow-button" onclick="ga('send', 'event', { eventCategory: 'twitter', eventAction: 'button_click'});">Follow @exp_platform</a>
         </li>
       </ul>
 
@@ -315,6 +314,11 @@ git push platform master</code>
           <a href="https://protonet.info" class="credits__protonet"></a>
         </span>
       </h2>
+
+      <div class="share-twitter">
+        <a href="https://twitter.com/exp_platform" class="twitter-follow-button" onclick="ga('send', 'event', { eventCategory: 'twitter', eventAction: 'button_click'});">Follow us on twitter</a>
+      </div>
+
       <ul class="creators">
         <li class="creators__profile">
           <a href="https://github.com/https://github.com/hinnerk" class="profile" target="_blank">

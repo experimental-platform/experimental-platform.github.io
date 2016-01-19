@@ -271,6 +271,11 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 
 .share-twitter {
   display: block;
+  text-align: center;
+}
+
+.credits .share-twitter {
+  margin: 24px 0;
 }
 
 .share__links {
@@ -312,7 +317,7 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 
 .creators {
   list-style-type: none;
-  padding-left:    0;
+  padding-left:    8px;
 }
 
 .creators__profile {
@@ -785,5 +790,34 @@ a:hover .profile__portrait {
 
 .platform__description {
   font-size: 1.4em;
+}
+
+.twitter-follow-button:before {
+  content:    '';
+  display:    inline-block;
+  background-color: #4099FF;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  background: url(img/twitter.png) no-repeat center center;
+  padding-right: 10px;
+  margin-bottom: 4px;
+}
+
+.twitter-follow-button {
+  text-align: center;
+  display:               inline-block;
+  background-color:      #4099FF;
+  color:                 white;
+  padding:               8px;
+  text-decoration:       none;
+  height:                32px;
+  vertical-align:        middle;
+  font-size:             1.2em;
+  border:                1px solid #4099FF;
+  -webkit-border-radius: 4px;
+  -moz-border-radius:    4px;
+  -ms-border-radius:     4px;
+  border-radius:         4px;
 }
 
