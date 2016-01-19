@@ -293,6 +293,10 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
   font-size: 1.2em;
 }
 
+.technology__diagram {
+  width: 100%;
+}
+
 .order-hardware .button-interaction {
   display:        block;
   vertical-align: middle;
