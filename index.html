@@ -58,9 +58,9 @@
     <div class="tutorial section-content">
       <h2 class="headline-content"><span>Let's start</span></h2>
       <p class="tutorial__description">
-        If you aren't already running the experimental platform, you will need to set it up. Luckily this is very easy:
+        If you aren't already running the Experimental Platform, you will need to set it up. Luckily this is very easy:
       </p>
-      <div class="setup-platform"><a class="button-interaction" href="setup.html" rel="modal:open">Setup experimental platform</a></div>
+      <div class="setup-platform"><a class="button-interaction" href="setup.html" rel="modal:open">Setup Experimental Platform</a></div>
 
       <p class="tutorial__description">
         Here is our example project: Connect a CO₂ Sensor to a Smartlight and create an <strong>Office Air Quality System</strong>:
@@ -72,9 +72,7 @@
         <li>
           <h4>Connect the hardware and find them in the Device Manager</h4>
           <p class="primary">
-            Once you have activated the sensor and smartlight, they will show up in the <a href="#device-manager-popup" rel="modal:open">Device Manager</a>.
-          </p>
-          <p class="secondary">
+            Once you have activated the sensor and smartlight, they will show up in the <a href="#device-manager-popup" rel="modal:open">Device Manager</a>.<br>
             Don't worry if you don't have the hardware ready yet, we can skip this step for now and use virtual devices in this example.
           </p>
         </li>
@@ -107,25 +105,25 @@ git push platform master</code>
           </p>
         </li>
       </ol><!-- /.tutorial__steps -->
-
-      <div class="order-hardware">
-        <h2 class="headline-content"><span>Turn it into the real thing</span></h2>
-        <img class="order-hardware__illustration" src="img/order-hardware.jpg" alt="order hardware">
-        <p>If you'd like to try the example on real hardware order the modules via the links below.</p>
-        <a class="button-interaction" href="http://www.co2meter.com/collections/co2-sensors/products/s8-miniature-co2-sensor" target="_blank">Order the CO₂ Sensor
-          <span class="order-hardware__store">co2meter.com</span>
-        </a>
-        <a class="button-interaction" href="http://www.amazon.com/dp/B014H2P4KW/ref=sr_ph?ie=UTF8&amp;qid=1452304434&amp;sr=1&amp;keywords=philips+hue+ambiance+white+and+color" target="_blank">Order the Smartlight
-          <span class="order-hardware__store">amazon.com</span>
-        </a>
-        <a class="button-interaction" href="http://www.newegg.com/Product/Product.aspx?Item=N82E16856501013" target="_blank">Order the Mini PC
-          <span class="order-hardware__store">newegg.com</span>
-        </a>
-        <p>
-          For more information on how to setup the CO₂ Sensor check out this <a href="http://experimental-platform.tumblr.com/private/137559322715/tumblr_o15prdeSZ11ucy30s" target="_blank">little tutorial</a>.
-        </p>
-      </div>
     </div><!-- /.tutorial -->
+
+    <div class="order-hardware section-content">
+      <h2 class="headline-content"><span>Turn it into the real thing</span></h2>
+      <img class="order-hardware__illustration" src="img/order-hardware.jpg" alt="order hardware">
+      <p>If you'd like to try the example on real hardware order the modules via the links below.</p>
+      <a class="button-interaction" href="http://www.co2meter.com/collections/co2-sensors/products/s8-miniature-co2-sensor" target="_blank">Order the CO₂ Sensor
+        <span class="order-hardware__store">co2meter.com</span>
+      </a>
+      <a class="button-interaction" href="http://www.amazon.com/dp/B014H2P4KW/ref=sr_ph?ie=UTF8&amp;qid=1452304434&amp;sr=1&amp;keywords=philips+hue+ambiance+white+and+color" target="_blank">Order the Smartlight
+        <span class="order-hardware__store">amazon.com</span>
+      </a>
+      <a class="button-interaction" href="http://www.newegg.com/Product/Product.aspx?Item=N82E16856501013" target="_blank">Order the Mini PC
+        <span class="order-hardware__store">newegg.com</span>
+      </a>
+      <p>
+        For more information on how to setup the CO₂ Sensor check out this <a href="http://experimental-platform.tumblr.com/private/137559322715/tumblr_o15prdeSZ11ucy30s" target="_blank">little tutorial</a>.
+      </p>
+    </div>
 
     <div class="share section-content">
       <h2 class="headline-content"><span>Spread the word</span></h2>
@@ -139,7 +137,7 @@ git push platform master</code>
       </ul>
 
       <p class="share__description">
-        If you've built a cool integration make sure you drop us a line at experimental-platform [át] protonet.info so we can include it in our example library (and yes - pull requests work too!). For more infos, feel free to visit us in our Mountain View (CA) or Hamburg (Germany) office, invite us to a user group or just hit the links below:
+        If you've built a cool integration make sure you drop us a line at experimental-platform [át] protonet.info so we can include it in our example library (and yes - pull requests work too). For more infos, feel free to visit us in our Mountain View (CA) or Hamburg (Germany) office, invite us to a user group or just hit the links below:
       </p>
 
       <ul class="share__links">
@@ -173,7 +171,7 @@ git push platform master</code>
         <li class="outlook">
           <h3 class="headline-content"><span>Services</span></h3>
           <img class="outlook-banner" src="img/outlook-services.jpg" alt="services">
-          <p>That cool app that you just pushed to the experimental platform now needs a simple messaging layer? What if you could simply add a service to provide that? Just like on Heroku, EP provides a simple way to include services and use them in your application.</p>
+          <p>That cool app that you just pushed to the Experimental Platform now needs a simple messaging layer? What if you could simply add a service to provide that? Just like on Heroku, EP provides a simple way to include services and use them in your application.</p>
         </li>
       </ol>
     </div><!-- /.outlook -->
@@ -223,10 +221,10 @@ git push platform master</code>
       </div><!-- /.supported-technologies -->
 
       <p class="technology__description">
-        Use any language you like. Anything that works with heroku buildpacks can be used with the experimental platform. And since the interface to the hardware is via http connecting to it should work in any common language.
+        Use any language you like. Anything that works with heroku buildpacks can be used with the Experimental Platform. The interface to the hardware is http, so connecting to it should work in any common language.
       </p>
       <p class="technology__description">
-        This project wouldn't be possible without the extensive use of other great open source technologies: Docker, Dokku, Node.js, Go and so many more. The code is open source under Apache 2.0. Feel free to build, fork and share.
+        This project wouldn't be possible without the extensive use of other great open source technologies: Docker, Dokku, Node.js, Go and so many more.
       </p>
       <p>
         <strong>And please remember that this is under heavy development!</strong>
@@ -235,7 +233,7 @@ git push platform master</code>
 
     <div class="more-tutorials section-content">
       <h2 class="headline-content"><span>More components to play with</span></h2>
-      <p class="text-content examples__note">A list of open source reference apps built with experimental platform. <a target="_blank" href="https://github.com/experimental-platform/platform-configure-script/wiki#examples-with-connected-hardware">More can be found here.</a></p>
+      <p class="text-content examples__note">A list of open source reference apps built with Experimental Platform. <a target="_blank" href="https://github.com/experimental-platform/platform-configure-script/wiki#examples-with-connected-hardware">More can be found here.</a></p>
       <ul class="examples">
         <li>
           <a href="https://github.com/experimental-platform/example-dockerfile-jasper" target="_blank">
@@ -309,10 +307,7 @@ git push platform master</code>
 
     <div class="credits section-content">
       <h2 class="headline-content credits">
-        <span>
-          <span class="credits__made-by">Made with &hearts; by</span>
-          <a href="https://protonet.info" class="credits__protonet"></a>
-        </span>
+        <span class="credits__made-by">Made with &hearts; by <a href="https://protonet.info" class="credits__protonet" target="_blank"></a></span>
       </h2>
 
       <div class="share-twitter">

@@ -35,7 +35,7 @@ a {
 code {
   border:      1px solid black;
   padding:     6px;
-  margin:      6px;
+  margin:      0;
   display:     block;
   white-space: pre-wrap;
 }
@@ -55,7 +55,7 @@ code {
 }
 
 .section-content {
-  margin:             2em 12px;
+  margin:             4em 12px;
   overflow:           hidden;
   box-sizing:         border-box;
   -moz-box-sizing:    border-box;
@@ -154,6 +154,7 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
   background-size:   cover;
   background-repeat: no-repeat;
   width:             100%;
+  padding-top:       2em;
 }
 
 .teaser__text {
@@ -255,11 +256,14 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
   vertical-align:  middle;
 }
 
-.notify-me,
-.order-hardware,
 .setup-platform {
   text-align: center;
   margin:     2em auto;
+  font-size:  1.2em;
+}
+
+.order-hardware {
+  text-align: center;
   font-size:  1.2em;
 }
 
@@ -286,6 +290,27 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 
 .share__link {
   display: inline-block;
+  margin-right: 18px;
+  position: relative;
+}
+
+.share__link:last-child {
+  margin-right: 0;
+}
+
+.share__link:after {
+  content: "";
+  position: absolute;
+  right: -13px;
+  top: 8px;
+  width: 5px;
+  height: 5px;
+  background: #666;
+  border-radius: 10px;
+}
+
+.share__link:last-child:after {
+  content: none;
 }
 
 .share__description,
@@ -667,16 +692,23 @@ a:hover .profile__portrait {
   height:         40px;
   padding:        0;
   margin-bottom:  6px;
+  margin-left:    6px;
   vertical-align: middle;
 }
 
 .github-banner {
   z-index:  1;
-  position: fixed;
+  position: absolute;
   top:      0;
   right:    0;
   width:    149px;
   height:   149px;
+}
+
+@media (min-width: 1024px) {
+  .github-banner {
+    position: fixed;
+  }
 }
 
 .footer {
@@ -821,3 +853,12 @@ a:hover .profile__portrait {
   border-radius:         4px;
 }
 
+.tutorial__steps h4,
+.tutorial__steps p,
+.tutorial__steps code {
+  margin: 0.6em 0;
+}
+
+.tutorial__steps li {
+  margin: 2em 0;
+}
