@@ -692,12 +692,18 @@ a:hover .profile__portrait {
 }
 
 .github-banner {
-  z-index:  1;
-  position: fixed;
+  z-index:  204;
+  position: absolute;
   top:      0;
   right:    0;
   width:    149px;
   height:   149px;
+}
+
+@media (min-width: 1024px) {
+  .github-banner {
+    position: fixed;
+  }
 }
 
 .footer {
