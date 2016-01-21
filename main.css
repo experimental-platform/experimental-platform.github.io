@@ -55,7 +55,7 @@ code {
 }
 
 .section-content {
-  margin:             2em 12px;
+  margin:             4em 12px;
   overflow:           hidden;
   box-sizing:         border-box;
   -moz-box-sizing:    border-box;
@@ -285,7 +285,24 @@ $grayscale-mask: "data:          image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3
 }
 
 .share__link {
-  display: inline-block;
+  display:      inline-block;
+  margin-right: 18px;
+  position:     relative;
+}
+
+.share__link:after {
+  content:       "";
+  position:      absolute;
+  right:         -13px;
+  top:           8px;
+  width:         5px;
+  height:        5px;
+  background:    #666;
+  border-radius: 10px;
+}
+
+.share__link:last-child:after {
+  content: none;
 }
 
 .share__description,
